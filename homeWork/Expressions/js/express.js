@@ -17,3 +17,17 @@ var yearBorn = 1969; //
 var age = 2015 - yearBorn - 1;
 
 console.log("I am" + " " + age + " " + "years old");
+
+//arithmetic operators
+
+var width = prompt("enter width");
+Number(width);
+
+var height = prompt("Enter height of triangle");
+Number(height);
+
+var area = width * height / 2;
+
+console.log("The area of a triangle is " + " " + area);
+
+
