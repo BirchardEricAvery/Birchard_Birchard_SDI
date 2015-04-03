@@ -44,7 +44,7 @@ Number(number1, number2);
 remainder = number1 % number2;
 
 console.log("The remainder is" + " " + remainder);
-*/
+
 //Order of operations
 
 var quiz1 = 55;   //variable input
@@ -64,3 +64,12 @@ var quizAverage = (quiz1 + quiz2 + quiz3 + quiz4)/4;    //mathematical PEMDAS
 
 console.log("The average quiz score for all for quizzes" + " " + quizAverage); //log quiz average
 
+*/
+
+//Arrays
+
+var orangeBins = [234, 567, 883];
+
+var total = orangeBins[0] + orangeBins[1] + orangeBins[2]
+
+console.log("Array access total" + " " + total);
