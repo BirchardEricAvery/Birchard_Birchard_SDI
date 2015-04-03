@@ -64,7 +64,6 @@ var quizAverage = (quiz1 + quiz2 + quiz3 + quiz4)/4;    //mathematical PEMDAS
 
 console.log("The average quiz score for all for quizzes" + " " + quizAverage); //log quiz average
 
-*/
 
 //Arrays
 
@@ -73,3 +72,19 @@ var orangeBins = [234, 567, 883];
 var total = orangeBins[0] + orangeBins[1] + orangeBins[2]
 
 console.log("Array access total" + " " + total);
+
+    */
+
+//Concatenating strings
+
+var middleName = "Avery"; //declaring variables
+var lastName = "Birchard"; //declaring variables
+var fullName = middleName + " " + lastName; //concatenating
+
+console.log("My name is" + " " + fullName);  //logging to console
+
+
+
+//Casting
+
+
