@@ -45,4 +45,22 @@ remainder = number1 % number2;
 
 console.log("The remainder is" + " " + remainder);
 
+//Order of operations
+
+var quiz1 = prompt("Quiz 1");   //variable input
+Number(quiz1);                  //String to number
+
+var quiz2 = prompt("Quiz 2");   //variable input
+Number(quiz2);                  //String to number
+
+var quiz3 = prompt("Quiz 3");   //variable input
+Number(quiz3);                  //String to number
+
+var quiz4 = prompt("Quiz 4");   //variable input
+Number(quiz4);                  //String to number
+
+var quizAverage = (quiz1 + quiz2 +quiz3 + quiz4)/ 4;    //mathematical PEMDAS
+
+
+console.log("The average quiz score for all for quizzes" + " " + quizAverage); //log quiz average
 
