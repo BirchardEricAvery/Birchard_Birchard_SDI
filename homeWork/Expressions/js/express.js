@@ -44,20 +44,20 @@ Number(number1, number2);
 remainder = number1 % number2;
 
 console.log("The remainder is" + " " + remainder);
-
+*/
 //Order of operations
 
-var quiz1 = 55;   //variable input
-//Number(quiz1);                  //String to number
+var quiz1 = prompt("Quiz 1");   //variable input
+var quiz1 = Number(quiz1);                  //String to number
 
-var quiz2 = 66;   //variable input
-//Number(quiz2);                  //String to number
+var quiz2 =  prompt("Quiz 2");   //variable input
+var quiz2 = Number(quiz2);                  //String to number
 
-var quiz3 = 77;   //variable input
-//Number(quiz3);                  //String to number
+var quiz3 =  prompt("Quiz 3");   //variable input
+var quiz3 = Number(quiz3);                  //String to number
 
-var quiz4 = 88;   //variable input
-Number(quiz1, quiz2, quiz3, quiz4);                  //String to number
+var quiz4 = prompt("Quiz 4");   //variable input
+var quiz4 = Number(quiz4);                  //String to number
 
 var quizAverage = (quiz1 + quiz2 + quiz3 + quiz4)/4;    //mathematical PEMDAS
 
@@ -73,7 +73,7 @@ var total = orangeBins[0] + orangeBins[1] + orangeBins[2]
 
 console.log("Array access total" + " " + total);
 
-    */
+
 
 //Concatenating strings
 
@@ -84,7 +84,19 @@ var fullName = middleName + " " + lastName; //concatenating
 console.log("My name is" + " " + fullName);  //logging to console
 
 
+//Casting string to a number
 
-//Casting
+var stringVar = "6"; //string variable
+var result = 7 + Number(stringVar); //casting string to a number
+console.log("Number plus a string" + " " + result); //logging result to console
 
 
+//Casting number to a string
+
+var areaCode = 217;
+var firstPart = 722;
+var secPart = 5628;
+
+var phoneNo = "("+String(areaCode)+")" +" "+ String(firstPart)+" "+"-"+" "+String(secPart);
+
+console.log("My phone number is" + " " + phoneNo);
