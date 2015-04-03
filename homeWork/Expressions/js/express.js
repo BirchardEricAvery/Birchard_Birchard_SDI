@@ -10,3 +10,10 @@ a = a+ 3;       //assigning or storing values to a
 
 console.log(a); //logging a to output
 
+//year of birth
+
+var yearBorn = 1969; //
+
+var age = 2015 - yearBorn - 1;
+
+console.log("I am" + " " + age + " " + "years old");
