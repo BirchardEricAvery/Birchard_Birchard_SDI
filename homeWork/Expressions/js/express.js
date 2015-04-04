@@ -44,11 +44,11 @@ Number(number1, number2);
 remainder = number1 % number2;
 
 console.log("The remainder is" + " " + remainder);
-*/
+
 //Order of operations
 
 var quiz1 = prompt("Quiz 1");   //variable input
-var quiz1 = Number(quiz1);                  //String to number
+var quiz1 = Number(quiz1);      //String to number
 
 var quiz2 =  prompt("Quiz 2");   //variable input
 var quiz2 = Number(quiz2);                  //String to number
@@ -93,10 +93,19 @@ console.log("Number plus a string" + " " + result); //logging result to console
 
 //Casting number to a string
 
-var areaCode = 217;
-var firstPart = 722;
-var secPart = 5628;
+var areaCode = 217;     //declaring variables
+var firstPart = 722;    //declaring variables
+var secPart = 5628;     //declaring variables
 
-var phoneNo = "("+String(areaCode)+")" +" "+ String(firstPart)+" "+"-"+" "+String(secPart);
+var phoneNo = "("+String(areaCode)+")" +" "+ String(firstPart)+" "+"-"+" "+String(secPart);  //casting numbers to strings
 
-console.log("My phone number is" + " " + phoneNo);
+console.log("My phone number is" + " " + phoneNo); //logging strings to screen
+    */
+
+//Assignment operators
+
+var a = 3;
+a *= 4; //a = a * 4
+console.log("Assignment" + " " + a);
+a ++; //a = a +1 or a += 1
+console.log("Decrement" + " " + a);
