@@ -25,6 +25,8 @@ var estIntM;                        //estimated interest rate monthly
 var estIntY                         //estimated interest rate if you balance averages...(numerical)
 var int                             //interest rate
 var numberDep; var numberWithdraws  //running count of deposits and withdraws
+var incDep; var incWith;            //incrementing and decrementing deposits and withdraws
+incWith = 0; incDep = 0;            //Beginning increment and decrement values
 
 var w; var w1; var w2; var w3; var w4; var w5; var w6; var w7; var w8; var w9; //for ten withdraws
 var d; var d1; var d2; var d3; var d4; var d5; var d6; var d7; var d8; var d9; //for ten deposits
@@ -34,6 +36,7 @@ var d; var d1; var d2; var d3; var d4; var d5; var d6; var d7; var d8; var d9; /
 //data types number, string, array
 
 //Contact information
+//TODO: cast as strings
 name = prompt("Enter your name");                           //account holders name
 console.log("Your name is:" + " " + name);                  //console logging name
 
@@ -52,14 +55,31 @@ var startingBal = Number(startingBal);                              //casting st
 int = prompt("enter your annual percentage rate:");                 //interest to be calculated on average balance
 var int = Number(int);                                              //casting int string to a number
 
+//TODO: checkbook math for first withdraw and deposit
+
 //Console logging balance and interest rate
 console.log("Your staring balance is:" + " " + startingBal);        //console logging starting balance
-console.log("Your APR is:" + " " + int);                            //console logging APR
+console.log("Your APR is:" + " " + int + "%");                            //console logging APR
+int *= .01; console.log("Interest rate for computation" + " " + int);
 
 
 //increment entry's
-//2 examples of arithmetic operators + and -, /, *
-//2 assignment operators += -= *= /= -- ==
+//2+ assignment operators += -= *= /= -- ==
+
+//1 Withdraw
+var w = prompt("Enter amount of withdraw:");                                    //First withdraw
+parseInt(w);                  //casting var w string to a number
+var d = prompt("End amount of deposit \n If not deposit enter the number 0:")   //First deposit
+parseInt(d);                  //casting var d string to number
+incWith--;                  //decrementing for number of withdraws, 1
+incDep++;                   //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w + "\n" + "Deposit:" + " " + d);
+
+
+//2+ examples of arithmetic operators + and -, /, *
+//check book calculations
+
 
 //array data variable outputs
 //example of an array used as part of the calculation
