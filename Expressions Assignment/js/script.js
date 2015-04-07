@@ -16,12 +16,10 @@ var startingBal;                    //starting balance (numerical)
 var running;                        //running balance (numerical)
 var tenDep;                         //list out deposits (numerical) array
 var tenWithdraw;                    //list out withdraws (numerical) array
-var estIntM;                        //estimated interest rate monthly
-var estIntY;                        //estimated interest rate if you balance averages...(numerical)
 var int;                            //interest rate
-var numberDep; var numberWithdraws; //running count of deposits and withdraws
 var incDep; var incWith;            //incrementing and decrementing deposits and withdraws
 incWith = 0; incDep = 0;            //Beginning increment and decrement values
+var intMo                           //monthly interest rate
 
 var w; var w1; var w2; var w3; var w4; var w5; var w6; var w7; var w8; var w9; //for ten withdraws
 var d; var d1; var d2; var d3; var d4; var d5; var d6; var d7; var d8; var d9; //for ten deposits
@@ -95,31 +93,208 @@ running += d1; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w + "\n" + "Deposit:" + " " + d);   //Amount of withdraw and deposit
+console.log("Withdraw:" + " " + w1 + "\n" + "Deposit:" + " " + d1);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+
+//3 Withdraw 3 Deposit...
+//assignment operators += -= *= /= -- ==
+w2 = prompt("Enter amount of withdraw:");                                       //First withdraw
+w2 = Number(w2);                                                                //casting var w string to a number
+console.log("Withdraw:" + " " + w2);                                            //running total math
+running -= w2;                                                                  //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );                        //balance after withdraw
+
+d2 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d2 = Number(d2);                                                                //casting var d string to number
+console.log("Deposit:" + " " + d2);                                             //deposit
+
+running += d2; console.log("Balance after deposit:" + " " + running);           //operator for balance after deposit
+
+//increment entry's
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w2 + "\n" + "Deposit:" + " " + d2);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+
+
+//4 Withdraw 4 Deposit...
+//assignment operators += -= *= /= -- ==
+w3 = prompt("Enter amount of withdraw:");                                       //First withdraw
+w3 = Number(w3);                                                                //casting var w string to a number
+console.log("Withdraw:" + " " + w3);                                            //running total math
+running -= w3;                                                                  //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );                        //balance after withdraw
+
+d3 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d3 = Number(d3);                                                                //casting var d string to number
+console.log("Deposit:" + " " + d3);                                             //deposit
+
+running += d3; console.log("Balance after deposit:" + " " + running);           //operator for balance after deposit
+
+//increment entry's
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w3 + "\n" + "Deposit:" + " " + d3);   //Amount of withdraw and deposit
 console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
 
 
 
+//5 Withdraw 5 Deposit...
+//assignment operators += -= *= /= -- ==
+w4 = prompt("Enter amount of withdraw:");                                       //First withdraw
+w4 = Number(w4);                                                                //casting var w string to a number
+console.log("Withdraw:" + " " + w4);                                            //running total math
+running -= w4;                                                                  //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );                        //balance after withdraw
+
+d4 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d4 = Number(d4);                                                                //casting var d string to number
+console.log("Deposit:" + " " + d4);                                             //deposit
+
+running += d4; console.log("Balance after deposit:" + " " + running);           //operator for balance after deposit
+
+//increment entry's
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w4 + "\n" + "Deposit:" + " " + d4);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
 
 
-//2+ examples of arithmetic operators + and -, /, *
+
+//6 Withdraw 6 Deposit...
+//assignment operators += -= *= /= -- ==
+w5 = prompt("Enter amount of withdraw:");                                       //First withdraw
+w5 = Number(w5);                                                                //casting var w string to a number
+console.log("Withdraw:" + " " + w5);                                            //running total math
+running -= w5;                                                                  //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );                        //balance after withdraw
+
+d5 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d5 = Number(d5);                                                                //casting var d string to number
+console.log("Deposit:" + " " + d5);                                             //deposit
+
+running += d5; console.log("Balance after deposit:" + " " + running);           //operator for balance after deposit
+
+//increment entry's
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w5 + "\n" + "Deposit:" + " " + d5);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+
+//7 Withdraw 7 Deposit...
+//assignment operators += -= *= /= -- ==
+w6 = prompt("Enter amount of withdraw:");                                       //First withdraw
+w6 = Number(w6);                                                                //casting var w string to a number
+console.log("Withdraw:" + " " + w6);                                            //running total math
+running -= w6;                                                                  //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );                        //balance after withdraw
+
+d6 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d6 = Number(d6);                                                                //casting var d string to number
+console.log("Deposit:" + " " + d6);                                             //deposit
+
+running += d6; console.log("Balance after deposit:" + " " + running);           //operator for balance after deposit
+
+//increment entry's
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w6 + "\n" + "Deposit:" + " " + d6);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+
+
+//8 Withdraw 8 Deposit...
+//assignment operators += -= *= /= -- ==
+w7 = prompt("Enter amount of withdraw:");                                       //First withdraw
+w7 = Number(w7);                                                                //casting var w string to a number
+console.log("Withdraw:" + " " + w7);                                            //running total math
+running -= w7;                                                                  //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );                        //balance after withdraw
+
+d7 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d7 = Number(d7);                                                                //casting var d string to number
+console.log("Deposit:" + " " + d7);                                             //deposit
+
+running += d7; console.log("Balance after deposit:" + " " + running);           //operator for balance after deposit
+
+//increment entry's
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w7 + "\n" + "Deposit:" + " " + d7);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+
+
+//9 Withdraw 9 Deposit...
+//assignment operators += -= *= /= -- ==
+w8 = prompt("Enter amount of withdraw:");                                       //First withdraw
+w8 = Number(w8);                                                                //casting var w string to a number
+console.log("Withdraw:" + " " + w8);                                            //running total math
+running -= w8;                                                                  //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );                        //balance after withdraw
+
+d8 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d8 = Number(d8);                                                                //casting var d string to number
+console.log("Deposit:" + " " + d8);                                             //deposit
+
+running += d8; console.log("Balance after deposit:" + " " + running);           //operator for balance after deposit
+
+//increment entry's
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w8 + "\n" + "Deposit:" + " " + d8);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+
+
+//10 Withdraw 10 Deposit...
+//assignment operators += -= *= /= -- ==
+w9 = prompt("Enter amount of withdraw:");                                       //First withdraw
+w9 = Number(w9);                                                                //casting var w string to a number
+console.log("Withdraw:" + " " + w9);                                            //running total math
+running -= w9;                                                                  //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );                        //balance after withdraw
+
+d9 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d9 = Number(d9);                                                                //casting var d string to number
+console.log("Deposit:" + " " + d9);                                             //deposit
+
+running += d9; console.log("Balance after deposit:" + " " + running);           //operator for balance after deposit
+
+//increment entry's
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w9 + "\n" + "Deposit:" + " " + d9);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+
+
 
 //check book calculations
-
+//2+ examples of arithmetic operators + and -, /, *
 
 
 //Interest rate
 int = prompt("enter your annual percentage rate:");                     //interest to be calculated on average balance
 int = Number(int);                                                      //casting int string to a number
+intMo = int /= 12;
 
 //assignment operator += -= *= /= -- ==
 console.log("Your staring balance is:" + " " + startingBal);            //console logging starting balance
 console.log("Your APR is:" + " " + int + "%");                          //console logging APR
-int *= .01; console.log("Interest rate for computation" + " " + int);   //interest rate for computation
+console.log("Your monthly APR is:" + " " + intMo);
+int *= .01; console.log("Interest rate for computation" + " " + int);   //yearly interest rate for computation
+console.log("Interest rate for computation" + " " + intMo);             // monthly interest rate for computation
 
 
 //array data variable outputs
-//example of an array used as part of the calculation
+
+
+
 /*
 
 var tenDep[];
