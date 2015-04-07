@@ -35,11 +35,11 @@ var name = prompt("Enter your full name");                              //accoun
 String(name);
 console.log("Name:" + " " + name);                                      //console logging name
 
-var address = prompt("enter your complete address:");    //account holders address on one line
+var address = prompt("enter your complete address:");                   //account holders address on one line
 String(address);
 console.log("Residence:" + " " + address);                              //console logging address
 
-var phone = prompt("Enter contact number:");              //contact phone number
+var phone = prompt("Enter contact number:");                            //contact phone number
 String(phone);
 console.log("Phone number:" + " " + phone);                             //console logging phone number
 
@@ -93,8 +93,8 @@ running += d1; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w1 + "\n" + "Deposit:" + " " + d1);   //Amount of withdraw and deposit
-console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+console.log("Withdraw:" + " " + w1 + "\n" + "Deposit:" + " " + d1);             //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 //3 Withdraw 3 Deposit...
 //assignment operators += -= *= /= -- ==
@@ -114,8 +114,8 @@ running += d2; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w2 + "\n" + "Deposit:" + " " + d2);   //Amount of withdraw and deposit
-console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+console.log("Withdraw:" + " " + w2 + "\n" + "Deposit:" + " " + d2);             //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 
 //4 Withdraw 4 Deposit...
@@ -136,8 +136,8 @@ running += d3; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w3 + "\n" + "Deposit:" + " " + d3);   //Amount of withdraw and deposit
-console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+console.log("Withdraw:" + " " + w3 + "\n" + "Deposit:" + " " + d3);             //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 
 
@@ -159,8 +159,8 @@ running += d4; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w4 + "\n" + "Deposit:" + " " + d4);   //Amount of withdraw and deposit
-console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+console.log("Withdraw:" + " " + w4 + "\n" + "Deposit:" + " " + d4);             //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 
 
@@ -182,8 +182,8 @@ running += d5; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w5 + "\n" + "Deposit:" + " " + d5);   //Amount of withdraw and deposit
-console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+console.log("Withdraw:" + " " + w5 + "\n" + "Deposit:" + " " + d5);             //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 //7 Withdraw 7 Deposit...
 //assignment operators += -= *= /= -- ==
@@ -225,8 +225,8 @@ running += d7; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w7 + "\n" + "Deposit:" + " " + d7);   //Amount of withdraw and deposit
-console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+console.log("Withdraw:" + " " + w7 + "\n" + "Deposit:" + " " + d7);             //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 
 //9 Withdraw 9 Deposit...
@@ -247,8 +247,8 @@ running += d8; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w8 + "\n" + "Deposit:" + " " + d8);   //Amount of withdraw and deposit
-console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+console.log("Withdraw:" + " " + w8 + "\n" + "Deposit:" + " " + d8);             //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 
 //10 Withdraw 10 Deposit...
@@ -269,8 +269,8 @@ running += d9; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w9 + "\n" + "Deposit:" + " " + d9);   //Amount of withdraw and deposit
-console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+console.log("Withdraw:" + " " + w9 + "\n" + "Deposit:" + " " + d9);             //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 
 
