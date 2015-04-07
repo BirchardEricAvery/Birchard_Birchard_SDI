@@ -2,7 +2,7 @@
     Student:        Eric (Avery) Birchard
     Instructor:     Dan Williams
     Assignment:     Expressions
-    Date:           4/ 5/ 2015
+    Date:           4/ 7/ 2015
     Class:          SDI 1503
     Term:           1
  */
@@ -13,18 +13,13 @@
 
 
 var startingBal;                    //starting balance (numerical)
-var minusTotal;                     //total negative (numerical
-var posTotal;                       //total positive (numerical)
 var running;                        //running balance (numerical)
-var tenDep                          //list out deposits (numerical) array
-var tenWithdraws                    //list out withdraws (numerical) array
-var name;                           //name variable (string)
-var phone;                          //phone number as a string
-var address;                        //address (string)
+var tenDep;                         //list out deposits (numerical) array
+var tenWithdraw;                    //list out withdraws (numerical) array
 var estIntM;                        //estimated interest rate monthly
-var estIntY                         //estimated interest rate if you balance averages...(numerical)
-var int                             //interest rate
-var numberDep; var numberWithdraws  //running count of deposits and withdraws
+var estIntY;                        //estimated interest rate if you balance averages...(numerical)
+var int;                            //interest rate
+var numberDep; var numberWithdraws; //running count of deposits and withdraws
 var incDep; var incWith;            //incrementing and decrementing deposits and withdraws
 incWith = 0; incDep = 0;            //Beginning increment and decrement values
 
@@ -37,48 +32,60 @@ var d; var d1; var d2; var d3; var d4; var d5; var d6; var d7; var d8; var d9; /
 
 //Contact information
 //TODO: cast as strings
-name = prompt("Enter your name");                           //account holders name
-console.log("Your name is:" + " " + name);                  //console logging name
+ var name = prompt("Enter your full name");                             //account holders name
+name = String(name);
+console.log("Your name is:" + " " + name);                              //console logging name
 
-address = prompt("enter your address:" + " " + address);    //account holders address on one line
-console.log("Residence:" + " " + address);                  //console logging address
+var address = prompt("enter your complete address:" + " " + address);    //account holders address on one line
+address = String(address);
+console.log("Residence:" + " " + address);                      //console logging address
 
-phone = prompt("Enter contact number:" + " " + phone);      //contact phone number
-console.log("Phone number:" + " " + phone);                 //console logging phone number
-
+var phone = prompt("Enter contact number:" + " " + phone);      //contact phone number
+phone = String(phone);
+console.log("Phone number:" + " " + phone);                     //console logging phone number
 
 //Starting balance
 startingBal = prompt("Enter your staring balance");                 //prompt for string input from user
 var startingBal = Number(startingBal);                              //casting string to a number
-
-//Interest rate
-int = prompt("enter your annual percentage rate:");                 //interest to be calculated on average balance
-var int = Number(int);                                              //casting int string to a number
-
-//TODO: checkbook math for first withdraw and deposit
-
-//Console logging balance and interest rate
-console.log("Your staring balance is:" + " " + startingBal);        //console logging starting balance
-console.log("Your APR is:" + " " + int + "%");                            //console logging APR
-int *= .01; console.log("Interest rate for computation" + " " + int);
+console.log("Starting balance" + " " + startingBal);
 
 
 //increment entry's
 //2+ assignment operators += -= *= /= -- ==
+//TODO: checkbook math for first withdraw and deposit
+//1 Withdraw 1 Deposit...
+w = prompt("Enter amount of withdraw:");                                    //First withdraw
+w = Number(w);                    //casting var w string to a number
+console.log("Withdraw:" + " " + w);
+running = startingBal - w;      //running balance withdraw
+console.log("Balance after withdraw:" + " " + running );
 
-//1 Withdraw
-var w = prompt("Enter amount of withdraw:");                                    //First withdraw
-parseInt(w);                  //casting var w string to a number
-var d = prompt("End amount of deposit \n If not deposit enter the number 0:")   //First deposit
-parseInt(d);                  //casting var d string to number
-incWith--;                  //decrementing for number of withdraws, 1
-incDep++;                   //incrementing for number of deposits,  1
+d = prompt("End amount of deposit \n If not deposit enter the number 0:");  //First deposit
+d = Number(d);                    //casting var d string to number
+console.log("Deposit:" + " " + d);
 
-console.log("Withdraw:" + " " + w + "\n" + "Deposit:" + " " + d);
+var run = running + d; console.log("Balance after deposit:" + " " + run);
+
+incWith++;                      //decrementing for number of withdraws, 1
+incDep++;                       //incrementing for number of deposits,  1
+
+console.log("Withdraw:" + " " + w + "\n" + "Deposit:" + " " + d);   //Amount of withdraw and deposit
+console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep); //increments and decrements
+
 
 
 //2+ examples of arithmetic operators + and -, /, *
+
 //check book calculations
+
+
+//Interest rate
+int = prompt("enter your annual percentage rate:");                     //interest to be calculated on average balance
+int = Number(int);                                                      //casting int string to a number
+
+console.log("Your staring balance is:" + " " + startingBal);            //console logging starting balance
+console.log("Your APR is:" + " " + int + "%");                          //console logging APR
+int *= .01; console.log("Interest rate for computation" + " " + int);   //interest rate for computation
 
 
 //array data variable outputs
