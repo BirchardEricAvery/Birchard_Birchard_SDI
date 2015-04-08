@@ -30,7 +30,7 @@ console.log(info); //displaying array
 
 console.log("Array access notation in position 3" + " " + info[3]);
 console.log(info[4]);
-
+/*
 //Two-Dimensional array
 
 var personnel = new Array();
@@ -53,3 +53,4 @@ personnel[2][2] = "Address2";
 console.log("Name : " + personnel[0][0] + personnel[1][0] + personnel[2][0] + "\r");
 console.log("Age : " + personnel[0][1] + personnel[1][1] + personnel[2][1] + "\r");
 console.log("Address : " + personnel[0][2] + personnel[1][2] + personnel[2][2] + "\r");
+*/

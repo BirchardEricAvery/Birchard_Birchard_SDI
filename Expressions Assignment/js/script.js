@@ -269,7 +269,7 @@ running += d9; console.log("Balance after deposit:" + " " + running);           
 incWith++;                      //decrementing for number of withdraws, 1
 incDep++;                       //incrementing for number of deposits,  1
 
-console.log("Withdraw:" + " " + w9 + "\n" + "Deposit:" + " " + d9);             //Amount of withdraw and deposit
+console.log("Withdraw:" + " " + w9 + "\n" + "Deposit:" + " " + d9);             //Amount of withdraw and deposit and concatenations
 console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    //increments and decrements
 
 
@@ -290,70 +290,56 @@ console.log("Your monthly APR is:" + " " + intMo);
 int *= .01; console.log("Interest rate for computation" + " " + int);   //yearly interest rate for computation
 console.log("Interest rate for computation" + " " + intMo);             // monthly interest rate for computation
 
+//user information
 
-//array data variable outputs
+console.log("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:" + " " + phone);
 
 
+//array data variables for ten withdraws and deposits
 
+
+tenWithdraw = [w, w1, w2, w3, w4, w5, w6, w7, w8, w9];
+console.log("Withdraws:" + incWith +  "\n" + tenWithdraw);
+
+var avgW = (w + w1 + w2 + w3 + w4 + w5 + w6 + w7+ + w8, w9)/incWith;    //average withdraws
+
+console.log("Your average withdraw is:" + " " + avgW);
+
+tenDep = [d, d1, d2, d3, d4, d5, d6, d7, d8, d9];
+console.log("Deposits" + " " + incDep + "\n" + tenDep);
+
+var avgD = (d + d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9)/incDep;     //average deposits
+
+console.log("Your average deposit is:" + " " + avgD);
+
+var avgB = avgD - avgW;                                                 //average balance
+
+console.log("Your average balance is:" + " " + avgB);
+
+
+//monthly interest earned if balance stayed the same
+console.log("If your average stayed at" + " " + avgB + " " + "\n" +
+ "Then your monthly interest earned would be:" + (avgB * intMo));
+
+//yearly interest if balance stayed the same
+console.log("And your yearly interest earned would be:" + " " + avgB * int);
 /*
 
-var tenDep[];
+Entered my contact information and it displayed correctly.
 
-myArray();                      //array variable
-myArray[0] = V + " ";
-myArray[1] = mPG + " " + "and" + " ";
-myArray[2] = gU + ".";
+Entered a starting balance of 1000, and various withdraws.  Minus 50 had a balance of 950,
 
-var personnel = new Array();
+adding 100 made a balance of 1050 and so on.  Both month interest earned, and yearly displayed as expected.
 
-personnel[0] = new Array();
-personnel[0][0] = "Name0";
-personnel[0][1] = "Age0";
-personnel[0][2] = "Address0";
+And the array of all withdraws and deposits displayed via my arrays,
 
-personnel[1] = new Array();
-personnel[1][0] = "Name1";
-personnel[1][1] = "Age1";
-personnel[1][2] = "Address1";
+although I need some major formatting knowledge in the future.
 
-personnel[2] = new Array();
-personnel[2][0] = "Name2";
-personnel[2][1] = "Age2";
-personnel[2][2] = "Address2";
-
-console.log("Name : " + personnel[0][0] + personnel[1][0] + personnel[2][0] + "\r");
-console.log("Age : " + personnel[0][1] + personnel[1][1] + personnel[2][1] + "\r");
-console.log("Address : " + personnel[0][2] + personnel[1][2] + personnel[2][2] + "\r");
-//string variable as output
-
-
-//interest rate for average balance monthly and yearly
-
-
- Input type of car driven, in this cas it's a car.
-
- Input starting gallons in tank, that being 10.
-
- Input number of miles driven, generically I put 150.
-
- Input Gallons used, my input was 5.
-
- The output was, "Your Car MPG is: 30 using 5 Gallons.
-
- The array output strings of data used was,
-
- Console log output values. calcs, descriptive, string concatenation
-
- And lastly these comments.
 
  verify in GitHub
- 5 or more commits
 
  */
 
-
-
-//Save PDF flowchart as Birchard_Eric_Expressions_Flowchart.pdf in Expressions Assignment folder
 
 //make a zip file of Birchard_Eric_Expressions_Assignment.zip for backup on FSO
 
