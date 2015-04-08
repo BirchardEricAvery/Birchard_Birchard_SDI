@@ -7,8 +7,6 @@
     Term:           1
  */
 
-//alert("test"); //First js file test
-
 //Checkbook
 
 
@@ -292,36 +290,39 @@ console.log("Interest rate for computation" + " " + intMo);             // month
 
 //user information
 
-console.log("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:" + " " + phone);
+console.log("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:" + " " + phone);  //concatenation of contact information
 
 
 //array data variables for ten withdraws and deposits
 
 
-tenWithdraw = [w, w1, w2, w3, w4, w5, w6, w7, w8, w9];
-console.log("Withdraws:" + incWith +  "\n" + tenWithdraw);
+tenWithdraw = [w, w1, w2, w3, w4, w5, w6, w7, w8, w9];                  //array for ten withdraws
+console.log("Withdraws:" + incWith +  "\n" + tenWithdraw);              //console log for ten withdraws
 
 var avgW = (w + w1 + w2 + w3 + w4 + w5 + w6 + w7+ + w8, w9)/incWith;    //average withdraws
 
-console.log("Your average withdraw is:" + " " + avgW);
+console.log("Your average withdraw is:" + " " + avgW);                  //console log for average withdraw
 
-tenDep = [d, d1, d2, d3, d4, d5, d6, d7, d8, d9];
+tenDep = [d, d1, d2, d3, d4, d5, d6, d7, d8, d9];                       //console log number of deposits
 console.log("Deposits" + " " + incDep + "\n" + tenDep);
 
 var avgD = (d + d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9)/incDep;     //average deposits
 
-console.log("Your average deposit is:" + " " + avgD);
+console.log("Your average deposit is:" + " " + avgD);                   //console log average deposit
 
 var avgB = avgD - avgW;                                                 //average balance
 
-console.log("Your average balance is:" + " " + avgB);
+console.log("Your average balance is:" + " " + avgB);                   //console log average balance
 
 
 //monthly interest earned if balance stayed the same
+
 console.log("If your average stayed at" + " " + avgB + " " + "\n" +
  "Then your monthly interest earned would be:" + (avgB * intMo));
 
+
 //yearly interest if balance stayed the same
+
 console.log("And your yearly interest earned would be:" + " " + avgB * int);
 /*
 
@@ -336,11 +337,8 @@ And the array of all withdraws and deposits displayed via my arrays,
 although I need some major formatting knowledge in the future.
 
 
- verify in GitHub
 
  */
 
-
 //make a zip file of Birchard_Eric_Expressions_Assignment.zip for backup on FSO
 
-//Make sure code is in the GitHub Repository
