@@ -340,5 +340,3 @@ although I need some major formatting knowledge in the future.
 
  */
 
-//make a zip file of Birchard_Eric_Expressions_Assignment.zip for backup on FSO
-
