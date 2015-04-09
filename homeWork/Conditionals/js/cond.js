@@ -34,7 +34,7 @@ if(oldEnough){
 }
 console.log("What comes after.");
 
- */
+
 
 //Conditional logic
 //if the kid is over 48 inches in height
@@ -47,5 +47,44 @@ var minHeight = 48;
 if(kidHeight > minHeight){
     //code performed if condition is true
     console.log("You can ride the coaster!");
+
+}
+
+//Conditional logic
+//Condition with Expressions
+
+//if the kid is over 48 inches in height
+
+var kidHeight = 47;
+var minHeight = 48;
+var sneakerLift = 2;
+
+//if the child is old enough, print to the console "you can ride!"
+
+if(kidHeight + sneakerLift > minHeight){
+    //code performed if condition is true
+    console.log("You can ride the coaster!");
+
+}
+
+    */
+
+//Conditional logic
+//If else
+
+//if the kid is over 48 inches in height
+
+var kidHeight = 48;
+var minHeight = 48;
+var sneakerLift = 2;
+
+//if the child is old enough, print to the console "you can ride!"
+
+if(kidHeight > minHeight){
+    //code performed if condition is true
+    console.log("You can ride the coaster!");
+    //code performed if condition is false
+} else{
+    console.log("Sorry kid you got some growing to do first!");
 
 }
