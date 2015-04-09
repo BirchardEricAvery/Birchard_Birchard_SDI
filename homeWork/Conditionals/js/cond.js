@@ -21,7 +21,7 @@ if(temp > 70){
     goToTheMovies();
 }
 
- */
+
 
 //Conditional logic
 var oldEnough = false;
@@ -33,3 +33,19 @@ if(oldEnough){
 
 }
 console.log("What comes after.");
+
+ */
+
+//Conditional logic
+//if the kid is over 48 inches in height
+
+var kidHeight = 40;
+var minHeight = 48;
+
+//if the child is old enough, print to the console "you can ride!"
+
+if(kidHeight > minHeight){
+    //code performed if condition is true
+    console.log("You can ride the coaster!");
+
+}
