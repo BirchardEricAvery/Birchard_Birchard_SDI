@@ -3,7 +3,7 @@
     Date:       8, April 2015
     Class:      SDI
     Term:       I
-*/
+
 
 //conditionals
 
@@ -20,3 +20,16 @@ if(temp > 70){
 }else{
     goToTheMovies();
 }
+
+ */
+
+//Conditional logic
+var oldEnough = false;
+//if the child is old enough, print to the console "you can ride!"
+
+if(oldEnough){
+    //code performed if condition is true
+    console.log("You can ride the coaster!");
+
+}
+console.log("What comes after.");
