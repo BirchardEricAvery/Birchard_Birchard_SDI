@@ -4,3 +4,5 @@
     Class:      SDI
     Term:       I
 */
+
+alert("test");
