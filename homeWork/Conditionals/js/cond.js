@@ -112,3 +112,11 @@ if(kidHeight > minHeight){
     //sorry kid you have some growing to do
     console.log("Sorry kid you got some growing to do first!");
 }else{}
+
+/*
+Relational operators > < >= <= compare to result in true or false
+Equality operators
+    Equal           =       overwrites
+    Equality        ==      or the same as      6 == "6" is TRUE
+    Strict Equality ===     same value and type 6 === "6" is FALSE faster
+    Inequality      !=      or not equal to     a != b      is TRUE
