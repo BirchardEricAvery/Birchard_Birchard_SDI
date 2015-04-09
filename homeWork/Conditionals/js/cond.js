@@ -134,7 +134,7 @@ Equality operators
     FALSE   FALSE               !
 
 a === b && b === c
-    */
+
 
 
 
@@ -151,3 +151,42 @@ if(iPhonePrice < budget || wonLottery === true){
 }else{
     console.log("No phone for you!!");
 }
+
+
+//Ternaries requires 3 components
+
+if(condition){
+    do if true;
+}else{
+    do if false;
+}
+
+//Ternary version
+
+(condition) ? do if true : do if false;
+
+
+
+var gpa = 48;
+
+//if the gpa is over the min 2.0 score, the student can graduate
+
+if(gps > 2.0){
+    console.log("You can graduate!");
+}else{
+    console.log("GPA is too low!")
+}
+
+var gpa = 48;
+
+(gpa > 2.0) ? console.log("You can graduate!") : console.log("GPA is too low!");
+
+*/
+
+var age =6;
+var book;
+
+//if the child is under 10, they get Green Eggs and Ham, otherwise they get the The Time machine
+
+book = (age < 10) ? "Green Eggs and Ham" : "The Time Machine";
+console.log(book);
