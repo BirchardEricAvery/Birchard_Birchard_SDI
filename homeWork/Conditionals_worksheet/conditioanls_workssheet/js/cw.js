@@ -29,22 +29,64 @@ Number(weight);                                                     //cast weigh
 
 weight >= 250 ? console.log(enter) : console.log(toLight);
 
-*/
+
 
 //TODO Celsius to Fahrenheit converter, got stuck
 
 //variables
 
-var conversionF;
-var answer;
-conversionF = 9/5;     //value * conversionF = temp F
+var conversionF;            //variable for conversion math
+var answer;                 //variable to hole number degrees
+conversionF = 9/5;          //value * conversionF = temp F
 
-answer = prompt("Enter temperature in numbers:");
-Number(answer);
+answer = prompt("Enter temperature in numbers:");                       //user input for numbers
+Number(answer);                                                         //casting string to number
 
 conversion = prompt("Enter a capital letter C:");                       //String value signifying temp type
 
-console.log(answer + conversion + " " + "Converts to:" + " " + answer * conversionF + 32 + " " + "F")
+console.log(answer + conversion + " " + "Converts to:" + " " + answer * conversionF + 32 + " " + "F") //log to console
+ */
+
+//TODO last chance for gas
+
+//variables
+
+var mpg;
+var tank;
+var gauge;
+var gaugeCalc;
+var distance;
+var drive;
+
+//MPG
+
+mpg = prompt("What is your estimated MPG for this trip?");
+Number(mpg);
+console.log("Estimated MPG is:" + mpg + " " + "MPG");
+
+//tank capacity
+tank = prompt("What is your tank capacity?");
+Number(tank);
+console.log("Tank capacity:" + " " + tank + " " + "gal");
+
+//Gauge reading, Gal left
+
+gauge = prompt("What percent of fuel is left in your tank (leave out the percent symbol)");
+Number(gauge);
+console.log("Estimated fuel left in tank:" + (gauge *.1) * tank + " " + "%");
+gaugeCalc = gauge * .01;
+drive = (tank * gaugeCalc) * mpg;
+
+//You can drive approximately?
+console.log("You can drive about" + " " + drive + " " + "miles" + " " + "before needing to fuel.");
+
+distance = prompt("What is the distance to the nest gas station?")
+Number(distance);
+console.log("Distance to next gas station:" + " " + distance + " " + "miles")
 
 
+console.log("The next gas station is:" + " " + distance + " " + "miles out");
 
+//Gas up, or move on
+
+distance > drive ? console.log("Best to gas up now!") : console.log("Drive on, no need for gas");
