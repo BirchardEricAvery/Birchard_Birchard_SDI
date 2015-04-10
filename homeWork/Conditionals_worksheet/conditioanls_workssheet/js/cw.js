@@ -60,33 +60,31 @@ var drive;
 
 //MPG
 
-mpg = prompt("What is your estimated MPG for this trip?");
-Number(mpg);
-console.log("Estimated MPG is:" + mpg + " " + "MPG");
+mpg = prompt("What is your estimated MPG for this trip?");                          //MPG
+Number(mpg);                                                                        //casting
+console.log("Estimated MPG is:" + mpg + " " + "MPG");                               //log MPG
 
 //tank capacity
-tank = prompt("What is your tank capacity?");
-Number(tank);
-console.log("Tank capacity:" + " " + tank + " " + "gal");
+tank = prompt("What is your tank capacity?");                                       //user input
+Number(tank);                                                                       //casting
+console.log("Tank capacity:" + " " + tank + " " + "gal");                           //log tank capacity
 
 //Gauge reading, Gal left
 
-gauge = prompt("What percent of fuel is left in your tank (leave out the percent symbol)");
-Number(gauge);
-console.log("Estimated fuel left in tank:" + (gauge *.1) * tank + " " + "%");
-gaugeCalc = gauge * .01;
-drive = (tank * gaugeCalc) * mpg;
+gauge = prompt("What percent of fuel is left in your tank (leave out the percent symbol)"); //gauge reading
+Number(gauge);                                                                              //casting
+console.log("Estimated fuel left in tank:" + (gauge *.1) * tank + " " + "%");               //log percent left in tank
+gaugeCalc = gauge * .01;                                                                    //math for tank
+drive = (tank * gaugeCalc) * mpg;                                                           //math for distance
 
 //You can drive approximately?
-console.log("You can drive about" + " " + drive + " " + "miles" + " " + "before needing to fuel.");
+console.log("You can drive about" + " " + drive + " " + "miles" + " " + "before needing to fuel."); //log distance can drive
 
-distance = prompt("What is the distance to the nest gas station?")
-Number(distance);
-console.log("Distance to next gas station:" + " " + distance + " " + "miles")
+distance = prompt("What is the distance to the nest gas station?")                                  //input for distance to go
+Number(distance);                                                                                   //casting
+console.log("Distance to next gas station:" + " " + distance + " " + "miles");                      //log distance to gas
 
-
-console.log("The next gas station is:" + " " + distance + " " + "miles out");
 
 //Gas up, or move on
 
-distance > drive ? console.log("Best to gas up now!") : console.log("Drive on, no need for gas");
+distance > drive ? console.log("Best to gas up now!") : console.log("Drive on, no need for gas");   //log advise
