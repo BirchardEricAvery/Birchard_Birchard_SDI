@@ -45,7 +45,7 @@ Number(answer);                                                         //castin
 conversion = prompt("Enter a capital letter C:");                       //String value signifying temp type
 
 console.log(answer + conversion + " " + "Converts to:" + " " + answer * conversionF + 32 + " " + "F") //log to console
- */
+
 
 //TODO last chance for gas
 
@@ -88,3 +88,48 @@ console.log("Distance to next gas station:" + " " + distance + " " + "miles");  
 //Gas up, or move on
 
 distance > drive ? console.log("Best to gas up now!") : console.log("Drive on, no need for gas");   //log advise
+
+
+ */
+
+//TODO grade letter calculator
+
+//Full Sail grade scale
+//Grade variables
+var aPlus;      //95 - 100%
+var a;          //90 - 94%
+var bPlus;      //85 - 89%
+var b;          //80 - 84%
+var cPlus;      //76 - 79%
+var c;          //73 - 75%
+var d;          //70 - 72%
+var f;          //0 - 69%
+
+var gradeL;
+
+grade = prompt("Enter percent number without the percent sign:");       //Enter value earned
+Number(grade);                                                          //casting string to a number
+
+//calculations
+
+if(grade >= 95){gradeL = "A+"
+
+}else if(grade >= 90){gradeL = "A"
+
+}else if(grade >= 85){gradeL = "B+"}
+
+else if(grade >= 80){gradeL = "B"}
+
+else if(grade >= 76){gradeL = "C+"}
+
+else if(grade >= 73){gradeL = "C"}
+
+else if(grade >= 70){gradeL = "D"}
+
+else if(grade > 69){gradeL = "F"};
+
+//“You have a X%, which means you have earned a(n) X in the class!”
+console.log("You have an" + " " + grade + "%" + " " + "\n" +
+"which means you have earned a(n)" + " " + gradeL + " " + "in the class!")
+
+
