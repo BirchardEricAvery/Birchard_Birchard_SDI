@@ -31,45 +31,20 @@ weight >= 250 ? console.log(enter) : console.log(toLight);
 
 */
 
-//TODO Celsius to Fahrenheit converter
+//TODO Celsius to Fahrenheit converter, got stuck
 
 //variables
 
-var conversion;
 var conversionF;
-var conversionC;
-var c;
-var C;
-var f;
-var F;
-var answerF;
-var answerC;
+var answer;
+conversionF = 9/5;     //value * conversionF = temp F
 
+answer = prompt("Enter temperature in numbers:");
+Number(answer);
 
-conversionF = 9/5 + 32;     //value * conversionF = temp F
-conversionC = 5/9 - 32      //value  * conversionC = temp C
+conversion = prompt("Enter a capital letter C:");                       //String value signifying temp type
 
-c = "Celsius";      //celsius string variable
-C = "Celsius";      //celsius string variable
-f = "Fahrenheit"    //Fahrenheit string variable
-F = "Fahrenheit"    //Fahrenheit string variable
-
-conversion = prompt("Enter a letter signifying temp type:");
-
-
-parseInt(conversion);
-
-conversion = c || C ? answerF = conversion * conversionF : answerC = conversion * conversionC;
-
-console.log(conversion);
-
-
-
-
-//32F is 0C
-//100C is 212F
-//90F is 32.22C
-
+console.log(answer + conversion + " " + "Converts to:" + " " + answer * conversionF + 32 + " " + "F")
 
 
 
