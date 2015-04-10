@@ -110,26 +110,26 @@ var gradeL;
 grade = prompt("Enter percent number without the percent sign:");       //Enter value earned
 Number(grade);                                                          //casting string to a number
 
-//calculations
+//calculations within if statements
 
-if(grade >= 95){gradeL = "A+"
+if(grade >= 95){gradeL = "A+"           //Grade A plus
 
-}else if(grade >= 90){gradeL = "A"
+}else if(grade >= 90){gradeL = "A"      //Grade A
 
-}else if(grade >= 85){gradeL = "B+"}
+}else if(grade >= 85){gradeL = "B+"}    //Grade B plus
 
-else if(grade >= 80){gradeL = "B"}
+else if(grade >= 80){gradeL = "B"}      //Grade B
 
-else if(grade >= 76){gradeL = "C+"}
+else if(grade >= 76){gradeL = "C+"}     //Grade C plus
 
-else if(grade >= 73){gradeL = "C"}
+else if(grade >= 73){gradeL = "C"}      //Grade C
 
-else if(grade >= 70){gradeL = "D"}
+else if(grade >= 70){gradeL = "D"}      //Grade D
 
-else if(grade > 69){gradeL = "F"};
+else if(grade > 69){gradeL = "F"};      //Grade F
 
 //“You have a X%, which means you have earned a(n) X in the class!”
-console.log("You have an" + " " + grade + "%" + " " + "\n" +
-"which means you have earned a(n)" + " " + gradeL + " " + "in the class!")
+console.log("You have an" + " " + grade + "%" + " " + "\n" +                    //logging grade percent to console
+"which means you have earned a(n)" + " " + gradeL + " " + "in the class!")      //logging letter grade
 
 
