@@ -10,6 +10,14 @@
 //conditionals assignment
 
 //TODO idea!!!
+//Bank loan
+//information: Name, address, phone
+//income determines max
+//debt to income ratio determines limiter via percent calc
+//time at current job determines length of loan
+//time at residence/ wait period,
+//credit score determines interest rate
+//payment calc
 
 //2 arithmetic operators + -,
 //2 conditional statements with an if statement, and not validating prompts
