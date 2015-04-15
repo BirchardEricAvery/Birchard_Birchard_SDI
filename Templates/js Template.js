@@ -2,8 +2,8 @@
     Instructor: Dan Williams
     Assignment: Conditionals Assignment
     Date:       10, April 2015
-    Class:      GoTo Training Week #3
-    Term:       Section #3
+    Class:      GoToTraining Week #3
+    Term:       SDI Section #3
 
  */
 
