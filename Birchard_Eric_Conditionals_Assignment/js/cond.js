@@ -8,8 +8,6 @@
  */
 
 
-
-
 //variables
 
 var name;
@@ -45,7 +43,7 @@ var rate;
 //account holders name
 
 if(name = ""){prompt("Question was left blank, please enter your full name")
-}else{prompt("Enter your full name");
+}else{prompt("Enter your full name")}
 
 //console logging name
 console.log("Name:" + " " + name);
