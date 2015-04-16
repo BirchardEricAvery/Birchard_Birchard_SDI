@@ -334,11 +334,12 @@ console.log("Withdraws" + " " + incWith + "\n" + "Deposits" + " " + incDep);    
 //Interest rate
 int = prompt("enter your annual percentage rate:");                     //interest to be calculated on average balance
 int = Number(int);                                                      //casting int string to a number
-intMo = int /= 12;
+intMo = int / 12;
 
 //assignment operator += -= *= /= -- ==
+
 alert("Your staring balance is:" + " " + "$" + startingBal);            //console logging starting balance
-alert("Your APR is:" + " " + int + "%");                                //console logging APR
+alert("Your APR is:" + " " + int + "%");                                //APR
 alert("Your monthly APR is:" + " " + intMo + "%");                      //monthly interest rate
 
 console.log("Your staring balance is:" + " " + "$" + startingBal);      //console logging starting balance
@@ -350,7 +351,7 @@ console.log("Interest rate for computation" + " " + intMo);             // month
 
 //user information
 
-alert("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:" + " " + phone);  //concatenation of contact information
+
 console.log("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:" + " " + phone);  //concatenation of contact information
 
 
@@ -358,33 +359,29 @@ console.log("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "P
 
 
 tenWithdraw = [w, w1, w2, w3, w4, w5, w6, w7, w8, w9];                  //array for ten withdraws
-alert("Withdraws:" + incWith +  "\n" + tenWithdraw);                    //console log for ten withdraws
+
 console.log("Withdraws:" + incWith +  "\n" + tenWithdraw);              //console log for ten withdraws
 
-var avgW = (w + w1 + w2 + w3 + w4 + w5 + w6 + w7+ + w8, w9)/incWith;    //average withdraws
+var avgW = (w + w1 + w2 + w3 + w4 + w5 + w6 + w7+ + w8 + w9)/incWith;    //average withdraws
 
-alert("Your average withdraw is:" + " " + "$" + avgW);                  //console log for average withdraw
 console.log("Your average withdraw is:" + " " + "$" + avgW);            //console log for average withdraw
 
 tenDep = [d, d1, d2, d3, d4, d5, d6, d7, d8, d9];                       //console log number of deposits
-alert("Deposits:" + " " + incDep + "\n" + tenDep);                      //ten deposits
+
 console.log("Deposits:" + " " + incDep + "\n" + tenDep);                //ten deposits
 
 var avgD = (d + d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9)/incDep;     //average deposits
 
-alert("Your average deposit is:" + " " + "$" + avgD);                   //console log average deposit
+
 console.log("Your average deposit is:" + " " + "$" + avgD);             //console log average deposit
 
-var avgB = avgD - avgW;                                                 //average balance
+var avgB = avgW - avgD;                                                 //average balance
 
-alert("Your average balance is:" + " " + "$" + avgB);                   //console log average balance
 console.log("Your average balance is:" + " " + "$" + avgB);             //console log average balance
 
 
 //monthly interest earned if balance stayed the same
 
-alert("If your average stayed at" + " " + avgB + " " + "\n" +
-"Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo));
 
 console.log("If your average stayed at" + " " + avgB + " " + "\n" +
  "Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo));
@@ -392,8 +389,21 @@ console.log("If your average stayed at" + " " + avgB + " " + "\n" +
 
 //yearly interest if balance stayed the same
 
-alert("And your yearly interest earned would be:" + " " + "$" + avgB * int);
 console.log("And your yearly interest earned would be:" + " " + "$" + avgB * int);
+
+//concatenation of contact information
+
+alert("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:" + " " + phone + "\n" +
+"Withdraws:" + incWith +  "\n" + tenWithdraw + "\n" +
+"Your average withdraw is:" + " " + "$" + avgW + "\n" +
+"Deposits:" + " " + incDep + "\n" + tenDep + "\n" +
+"Your average deposit is:" + " " + "$" + avgD + "\n" + "\n" +
+"Your average balance is:" + " " + "$" + avgB + "\n" +
+"If your average stayed at" + " " + "$" + avgB + " " + "\n" +
+"Then your monthly interest earned would be:" + " " + "$" + (avgB * (intMo/ 12)) + "\n" +
+"And your yearly interest earned would be:" + " " + "$" + avgB * int);
+
+
 /*
 
 Entered my contact information and it displayed correctly.
@@ -406,7 +416,7 @@ And the array of all withdraws and deposits displayed via my arrays,
 
 although I need some major formatting knowledge in the future.
 
-
+Alerts change a great deal of things and is likely a much more correct way to do this.
 
  */
 
