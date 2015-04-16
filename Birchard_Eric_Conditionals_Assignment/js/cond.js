@@ -1,15 +1,20 @@
-/*  Name:       Eric Avery Birchard
-    Instructor: Dan Williams
-    Assignment: Conditionals Assignment
-    Date:       15, April 2015
-    Class:      SDI
-    Term:       I
+/*    Name:       Eric Avery Birchard
+      Instructor: Dan Williams
+      Assignment: Conditionals Assignment
+      Date:       15, April 2015
+      Class:      SDI
+      Term:       I
 
 */
 
-
-//conditionals assignment
 //variables
+
+var name;
+var address;
+var phone;
+var checkingBal;
+var otherBal;
+
 var income;
 var loanMax;
 var debt;
@@ -25,50 +30,60 @@ var platinum;       //700 - 799         4%
 var gold;           //650 - 699         12%
 var silver;         //550 - 649         18%
 var bronze;         //450 -             24%
-var bad;            //below 449         ReApply
+var bad;            //below 449         ReApply later when score is higher
+var maxedOut        //debt to income ratio too high, bring your debt down and reApply
+var wait            //You need more time at you current job/ residence then reApply
 
 var rate;
 
-//TODO Bank loan
+//TODO Bank loan information: Name, address, phone
 
-//information: Name, address, phone
-
-//TODO: cast as strings
+//TODO begin validations, castings......
 //account holders name
 
-var name = prompt("Enter your full name");
-String(name);
+if(name = ""){prompt("Question was left blank, please enter your full name")
+}else{prompt("Enter your full name");
 
 //console logging name
-console.log("Name:" + " " + name); //TODO begin validations......
+console.log("Name:" + " " + name);
 
-//account holders address on one line
-var address = prompt("enter your complete address:");
-String(address);
+
+
+//account holders address
+address = prompt("enter your complete address:");
+
+if(address = ""){prompt("Question was left blank, please enter address")
+}else{String(address)}
 
 //console logging address
-console.log("Residence:" + " " + address);
+console.log("address:" + " " + address);
+
+
 
 //contact phone number
-var phone = prompt("Enter contact number:");
-String(phone);
+phone = prompt("Enter contact number:");
+if(phone = ""){prompt("Question was left blank, please enter your full phone number")
+}else{String(phone)}
 
 //console logging phone number
 console.log("Phone number:" + " " + phone);
 
+
 //Checking balance
-var checkingBal = prompt("Enter your staring balance");
+checkingBal = prompt("Enter your staring balance");
+if(checkingBal = ""){prompt("Question was left blank, please enter your checking account balance")
+}else{Number(checkingBal)}
 Number(checkingBal);
 
-//casting string to a number
-var startingBal = Number(startingBal);
-Number(startingBal);
-
-//Checking Balance
+//Checking Balance console log
 console.log("Checking balance:" + " " + "$" + checkingBal);
 
+
+
 //Other investments balance total
-var otherBal = prompt("Enter your any other investments holdings total liquid balance");
+otherBal = prompt("Enter your any other investments holdings total liquid balance");
+if(otherBal = ""){prompt("Question was left balance, please enter liquid assets, and other holdings balance")
+}else{Number(otherBal)}
 Number(otherBal);
 
 //Other sources balance
@@ -78,12 +93,24 @@ console.log("Total other sources balance:" + " " + "$" + otherBal);
 var info;
 info = [name, "\n", address, "\n", phone, "\n", checkingBal, "\n", otherBal, "\n"];
 
-//Display info
+//TODO: Display info
+
 alert(info);
+
+
+//TODO: end of info ****************************************************************************************************
+
+
 
 //2 conditional statements with an if statement, and validating prompts
 //income determines max with validation
 income = prompt("What is your annual income?");
+
+//casting income to a number
+Number(income);
+
+//if statements with validation
+
 
 //begin loan max calc with validation
 loanMax = income;
@@ -106,6 +133,8 @@ residence = prompt("How long have you lived at your current residence?");
 //TODO: credit score math w/ validation
 creditScore = prompt("What is your current credit score?");
 
+//casting variable score to a number
+Number(score);
 
 
 //scores variables
@@ -114,10 +143,12 @@ diamond = 800;
 platinum = 700;
 gold = 650;
 silver = 550;
-bronze = 450
+bronze = 450;
 bad = 449;
 
 //Credit score level
+
+
 
 if(creditScore > 851){score = reEnter
 
@@ -247,4 +278,5 @@ book = (age < 10) ? "Green Eggs and Ham" : "The Time Machine";
 console.log(book);
 
  //3 prompts w/ validations
- */
+
+    */
