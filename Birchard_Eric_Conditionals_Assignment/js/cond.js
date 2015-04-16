@@ -58,15 +58,18 @@ console.log("Phone number:" + " " + phone);
 
 //Checking balance
 var checkingBal = prompt("Enter your staring balance");
+Number(checkingBal);
 
 //casting string to a number
 var startingBal = Number(startingBal);
+Number(startingBal);
 
 //Checking Balance
 console.log("Checking balance:" + " " + "$" + checkingBal);
 
 //Other investments balance total
 var otherBal = prompt("Enter your any other investments holdings total liquid balance");
+Number(otherBal);
 
 //Other sources balance
 console.log("Total other sources balance:" + " " + "$" + otherBal);
@@ -78,26 +81,29 @@ info = [name, "\n", address, "\n", phone, "\n", checkingBal, "\n", otherBal, "\n
 //Display info
 alert(info);
 
-
-//income determines max
+//2 conditional statements with an if statement, and validating prompts
+//income determines max with validation
 income = prompt("What is your annual income?");
 
-//begin loan max calc
+//begin loan max calc with validation
 loanMax = income;
 
-//debt to income ratio determines limiter via percent calc
+//debt to income ratio determines limiter via percent calc with validation
 debt = prompt("What is your current debt?");
-//TODO: debt to income ratio and possible qualifier
+//TODO: debt to income ratio and possible qualifier w/ validation use ternary
 
 
 //time at current job determines length of loan
+//TODO: math for length of loan w/ validation use ternary
 jobLength = prompt("How long have you been employed at your current employer?");
 
 
 //time at residence/ wait period
+//TODO: math for wait time for loan/ till loan w/ validation use ternary
 residence = prompt("How long have you lived at your current residence?");
 
 //credit score determines interest rate
+//TODO: credit score math w/ validation
 creditScore = prompt("What is your current credit score?");
 
 
@@ -144,15 +150,17 @@ if(score = diamond){rate = .02
 }else(score = bad);
 
 //payment calc
-
+//TODO: Payment calculator math
 //2 arithmetic operators + -,
-//2 conditional statements with an if statement, and validating prompts
-//1 ternary conditional statement
 //1 logical operator &&, ||, !
 
 
 
+//TODO: Display final information
 //concatenation of strings and variables
+
+
+
 
 //values in multi-lines comment
 
