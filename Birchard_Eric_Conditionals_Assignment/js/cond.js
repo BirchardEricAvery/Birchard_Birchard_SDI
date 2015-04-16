@@ -1,11 +1,14 @@
-/*    Name:       Eric Avery Birchard
-      Instructor: Dan Williams
-      Assignment: Conditionals Assignment
-      Date:       15, April 2015
-      Class:      SDI
-      Term:       I
+/*          Name:       Eric Avery Birchard
+            Instructor: Dan Williams
+            Assignment: Conditionals Assignment
+            Date:       15, April 2015
+            Class:      SDI
+            Term:       I
 
-*/
+ */
+
+
+
 
 //variables
 
