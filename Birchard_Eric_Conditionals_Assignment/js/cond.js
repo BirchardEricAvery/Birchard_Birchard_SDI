@@ -40,8 +40,10 @@ var rate;
 //TODO Bank loan information: Name, address, phone
 
 //TODO begin validations, castings......
-//account holders name
+//TODO begin validations, castings......
 
+//account holders name and validation for empty problem
+name = prompt("Please enter your full name:");
 if(name > "")
 {alert("Name:" + " " + name)
 }else{name = prompt("Entry was left blank, please enter your full name:")}
@@ -54,51 +56,67 @@ console.log("Name:" + " " + name);
 //account holders address
 address = prompt("enter your complete address:");
 
-if(address = ""){prompt("Question was left blank, please enter address")
-}else{String(address)}
+if(address > "")
+{alert("Address:" + " " + address)
+}else{address = prompt("Entry was left blank, please enter your full address:")}
 
-//console logging address
-console.log("address:" + " " + address);
-
+//console logging name
+console.log("Address:" + " " + address);
 
 
 //contact phone number
 phone = prompt("Enter contact number:");
-if(phone = ""){prompt("Question was left blank, please enter your full phone number")
-}else{String(phone)}
 
-//console logging phone number
-console.log("Phone number:" + " " + phone);
+if(phone > "")
+{alert("Phone:" + " " + phone)
+}else{phone = prompt("Entry was left blank, please enter your contact number:")}
+
+//console logging name
+console.log("Phone:" + " " + phone);
+
 
 
 //Checking balance
-checkingBal = prompt("Enter your staring balance");
-if(checkingBal = ""){prompt("Question was left blank, please enter your checking account balance")
-}else{Number(checkingBal)}
-Number(checkingBal);
+checkingBal = prompt("Enter your checking account balance");
 
-//Checking Balance console log
+if(checkingBal > "")
+{alert("Checking balance:" + " " + "$" + checkingBal)
+}else{checkingBal = prompt("Entry was left blank, please enter your checking balance:")}
+
+//console logging name
 console.log("Checking balance:" + " " + "$" + checkingBal);
-
+Number(checkingBal);
 
 
 //Other investments balance total
 otherBal = prompt("Enter your any other investments holdings total liquid balance");
-if(otherBal = ""){prompt("Question was left balance, please enter liquid assets, and other holdings balance")
-}else{Number(otherBal)}
+
+if(otherBal > "")
+{alert("Liquid cash assets total:" + " " + "$" + otherBal)
+}else{otherBal = prompt("Entry was left blank, please enter liquid assets cash total:")}
+
+//console logging other investments total
+console.log("Liquid assets cash total:" + " " + "$" + otherBal);
 Number(otherBal);
 
-//Other sources balance
-console.log("Total other sources balance:" + " " + "$" + otherBal);
 
 //array for info
 var info;
-info = [name, "\n", address, "\n", phone, "\n", checkingBal, "\n", otherBal, "\n"];
+info = [name, address, phone, checkingBal, otherBal,];
 
-//TODO: Display info
+//Displaying information:
+alert("Name:" + " " + info[0] + "\n" +
+"Address:" + " " + info[1] + "\n" +
+"Phone:" + " " + info[2] + "\n" +
+"Checking balance:" + " " + "$" + info[3] + "\n" +
+"Other balances total:" + " " + "$" +  info[4]);
 
-alert(info);
-
+//Displaying information via console log
+console.log("Name:" + " " + info[0] + "\n" +
+"Address:" + " " + info[1] + "\n" +
+"Phone:" + " " + info[2] + "\n" +
+"Checking balance:" + " " + info[3] + "\n" +
+"Other balances total:" + " " + info[4]);
 
 //TODO: end of info ****************************************************************************************************
 
