@@ -7,7 +7,6 @@
 
  */
 
-
 //variables
 var name;
 var address;
@@ -250,7 +249,7 @@ if(score = diamond){rate = .02
 
 }else(score = bad);
 
-//payment calc
+
 //TODO: Payment calculator math
 //2 arithmetic operators + -,
 //1 logical operator &&, ||, !
@@ -273,28 +272,15 @@ if(score = diamond){rate = .02
 notes:
 
 
-Relational operators > < >= <= compare to result in true or false
-Equality operators
-    Equal           =       overwrites
-    Equality        ==      or the same as      6 == "6" is TRUE
-    Strict Equality ===     same value and type 6 === "6" is FALSE faster
-    Inequality      !=      or not equal to     a != b      is TRUE
-
-
  Logical operators (boolean or comparisons only)
     And                 &&
     Or                  ||
-    Exclusive Or (OXR)  ^
     Not                 !
 
     TRUE    TRUE        &&  ||
     TRUE    FALSE           ||
     FALSE   TRUE            ||  !
     FALSE   FALSE               !
-
-a === b && b === c
-
-
 
 //Conditional Logic - Logical operators AND if our paycheck is over 300
 
@@ -309,44 +295,4 @@ if(iPhonePrice < budget || wonLottery === true){
 }else{
     console.log("No phone for you!!");
 }
-
-
-//Ternaries requires 3 components
-
-if(condition){
-    do if true;
-}else{
-    do if false;
-}
-
-//Ternary version
-
-(condition) ? do if true : do if false;
-
-
-var gpa = 48;
-
-//if the gpa is over the min 2.0 score, the student can graduate
-
-if(gps > 2.0){
-    console.log("You can graduate!");
-}else{
-    console.log("GPA is too low!")
-}
-
-var gpa = 48;
-
-(gpa > 2.0) ? console.log("You can graduate!") : console.log("GPA is too low!");
-
-
-var age =6;
-var book;
-
-//if the child is under 10, they get Green Eggs and Ham, otherwise they get the The Time machine
-
-book = (age < 10) ? "Green Eggs and Ham" : "The Time Machine";
-console.log(book);
-
- //3 prompts w/ validations
-
-    */
+*/
