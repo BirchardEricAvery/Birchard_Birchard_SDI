@@ -21,6 +21,7 @@ var debt;
 var ratio;
 var displayRatio;
 var jobLength;
+var loanLn;
 var residence;
 var creditScore;
 var score;
@@ -179,23 +180,28 @@ console.log(qual);
 //TODO: End of debt to income code block********************************************************************************
 
 
+
+
 //time at current job determines length of loan
 //TODO: math for length of loan w/ validation use ternary...............................................................
 
 jobLength = prompt("How long have you been employed at your current employer?");
+Number(jobLength);
 
+jobLength > 0 ? console.log("jobLength entered correctly:" + " " + "$" + jobLength) :
+     jobLenth = prompt("Please enter again in numbers only for your debt to income ratio:");
+Number(jobLength);
 
+loanLn = jobLength * .5;
 
+loanLn >= 60 ? jobLength = prompt("Restart loan application process, invalid or unrealistic input") :
+    alert("You max loan term is:" + " " + loanLn);
 
-
-
-
-
-
-
+//TODO: End max loan length code block**********************************************************************************
 
 //time at residence/ wait period
-//TODO: math for wait time for loan/ till loan w/ validation use ternary
+//TODO: math for wait time for loan/ till loan w/ validation use ternary................................................+++++++++
+
 residence = prompt("How long have you lived at your current residence?");
 
 //credit score determines interest rate
