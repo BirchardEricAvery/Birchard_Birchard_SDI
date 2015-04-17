@@ -42,8 +42,9 @@ var rate;
 //TODO begin validations, castings......
 //account holders name
 
-if(name = ""){prompt("Question was left blank, please enter your full name")
-}else{prompt("Enter your full name")}
+if(name > "")
+{alert("Name:" + " " + name)
+}else{name = prompt("Entry was left blank, please enter your full name:")}
 
 //console logging name
 console.log("Name:" + " " + name);
