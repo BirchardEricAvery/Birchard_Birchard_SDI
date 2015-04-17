@@ -388,12 +388,12 @@ console.log("Your average balance is:" + " " + "$" + avgB);             //consol
 
 
 console.log("If your average stayed at" + " " + "$" + avgB + " " + "\n" +
- "Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo));
+ "Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo2));
 
 
 //yearly interest if balance stayed the same
 
-console.log("And your yearly interest earned would be:" + " " + "$" + avgB * int);
+console.log("And your yearly interest earned would be:" + " " + "$" + avgB * int2);
 
 //concatenation of contact information
 
@@ -405,11 +405,9 @@ alert("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:"
 "Your average deposit is:" + " " + "$" + avgD + "\n" + "\n" +
 "Your average balance is:" + " " + "$" + avgB + "\n" +
 "If your average stayed at" + " " + "$" + avgB + " " + "\n" +
-"Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo) + "\n" +
-"And your yearly interest earned would be:" + " " + "$" + avgB * int);
+"Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo2) + "\n" +
+"And your yearly interest earned would be:" + " " + "$" + avgB * int2);
 
-alert("avgB" + " " + avgB + "\n" + "intMo" + " " + intMo2 + "\n" + "int" + " " + int2);
-console.log("avgB" + " " + avgB + "\n" + "intMo" + " " + intMo2 + "\n" + "int" + " " + int2);
 /*
 
 Entered my contact information and it displayed correctly.
@@ -422,7 +420,11 @@ Calculated a very rough average balance of $500.
 
 Entered APR of 12 and got 12% and 1% respectively.
 
+Interest rate earned on an average of $500 came out to be $60 a year on 12% as expected.
 
+I have major issues debugging the math due to not keeping my variables vary separated.
+
+Lesson learned.
 
 
 
