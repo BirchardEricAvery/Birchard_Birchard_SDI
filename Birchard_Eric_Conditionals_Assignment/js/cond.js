@@ -9,7 +9,6 @@
 
 
 //variables
-
 var name;
 var address;
 var phone;
@@ -18,7 +17,10 @@ var otherBal;
 
 var income;
 var loanMax;
+var qual;
 var debt;
+var ratio;
+var displayRatio;
 var jobLength;
 var residence;
 var creditScore;
@@ -32,15 +34,13 @@ var gold;           //650 - 699         12%
 var silver;         //550 - 649         18%
 var bronze;         //450 -             24%
 var bad;            //below 449         ReApply later when score is higher
-var maxedOut        //debt to income ratio too high, bring your debt down and reApply
 var wait            //You need more time at you current job/ residence then reApply
 
 var rate;
 
 //TODO Bank loan information: Name, address, phone
 
-//TODO begin validations, castings......
-//TODO begin validations, castings......
+//TODO begin aplicant validations, castings.............................................................................
 
 //account holders name and validation for empty problem
 name = prompt("Please enter your full name:");
@@ -88,6 +88,8 @@ console.log("Checking balance:" + " " + "$" + checkingBal);
 Number(checkingBal);
 
 
+
+
 //Other investments balance total
 otherBal = prompt("Enter your any other investments holdings total liquid balance");
 
@@ -122,38 +124,75 @@ console.log("Name:" + " " + info[0] + "\n" +
 
 
 //2 conditional statements with an if statement, and validating prompts
-//income determines max with validation
-income = prompt("What is your annual income?");
+//income determines max potential loan with validation
+income = prompt("Enter your annual income in numbers only:");
 
-if(income > "" || NaN)
-{alert("Income:" + " " + "$" + income)
-}else if(income = ""){prompt("Entry was left blank, please enter your annual income:")
-}else(income = NaN){prompt("Please enter a number, or just numbers:")}
-
-//casting income to a number
 Number(income);
 
-//console logging income
+if(income > 0)
+{alert("Annual income:" + " " + "$" + income)
+}else if(income = String){income = prompt("Please enter again in numbers only:")}
+
+//console logging name
+alert("Annual income:" + " " + "$" + income);
 console.log("Annual income:" + " " + "$" + income);
 Number(income);
 
-
-
-
-//if statements with validation
 
 
 //begin loan max calc with validation
 loanMax = income;
 
 //debt to income ratio determines limiter via percent calc with validation
-debt = prompt("What is your current debt?");
 //TODO: debt to income ratio and possible qualifier w/ validation use ternary
 
 
+debt = prompt("What is your current debt?");
+
+Number(debt);
+
+if(debt > 0){console.log("Debt entered correctly:" + " " + "$" + debt)
+}else if(debt = String){debt = prompt("Please enter again in numbers only for your debt to income ratio:")}
+
+//alert and console logging debt
+alert("Debt:" + " " + "$" + debt);
+console.log("Debt:" + " " + "$" + debt);
+
+//Casting string to a number
+Number(debt);
+
+//Mathematical ratio
+ratio = debt/ income;
+
+//Display ratio and for calculations
+displayRatio = ratio * 100;
+alert("Your debt to income ratio is:" + " " + displayRatio + "%");
+console.log("Your debt to income ratio is:" + " " + displayRatio + "%");
+
+//ternary
+displayRatio >= 60 ? qual = "Bring debt to income ratio below 60% to qualify for loan" :
+    qual = "Your debt to income ratio qualifies for the application process";
+
+//Final display for debt to income ratio
+alert(qual);
+console.log(qual);
+
+//TODO: End of debt to income code block********************************************************************************
+
+
 //time at current job determines length of loan
-//TODO: math for length of loan w/ validation use ternary
+//TODO: math for length of loan w/ validation use ternary...............................................................
+
 jobLength = prompt("How long have you been employed at your current employer?");
+
+
+
+
+
+
+
+
+
 
 
 //time at residence/ wait period
