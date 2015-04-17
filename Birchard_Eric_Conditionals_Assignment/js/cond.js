@@ -14,6 +14,7 @@ var phone;
 var checkingBal;
 var otherBal;
 
+//loan variables
 var income;
 var loanMax;
 var qual;
@@ -26,6 +27,7 @@ var residence;
 var creditScore;
 var score;
 
+
 //Credit Score Calc
 var reEnter;        //851+              reEnter data for value between 0 and 850      
 var diamond;        //800 - 850         2%
@@ -35,8 +37,16 @@ var silver;         //550 - 649         18%
 var bronze;         //450 -             24%
 var bad;            //below 449         ReApply later when score is higher
 var wait            //You need more time at you current job/ residence then reApply
+var rate;           //interest rate
 
-var rate;
+//scores variables
+reEnter = "Invalid range, please enter a range between 0 and 850";
+diamond = 800;
+platinum = 700;
+gold = 650;
+silver = 550;
+bronze = 450;
+bad = 449;
 
 //TODO Bank loan information: Name, address, phone
 
@@ -202,7 +212,24 @@ loanLn >= 60 ? jobLength = prompt("Restart loan application process, invalid or 
 //time at residence/ wait period
 //TODO: math for wait time for loan/ till loan w/ validation use ternary................................................+++++++++
 
-residence = prompt("How long have you lived at your current residence?");
+residence = prompt("How long have you lived at your current residence in months?");
+//casting string to number
+Number(residence);
+
+//ternary with validation for residence
+residence  > 0 ? console.log("residence entered correctly:" + " " + residence + " " + "months") :
+    residence = prompt("Please enter again in numbers only for your time at current residence:");
+
+//re-casting in case variable was entered wrong and needed to be re-entered
+Number(residence);
+
+//wait variable
+wait = 24 - residence;
+
+//ternary for residence
+residence >= 24 ? alert("Length of time at current residence qualifies for the loan process") :
+    alert("You need to wait" + " " + wait + " " + "months to apply");
+
 
 //credit score determines interest rate
 //TODO: credit score math w/ validation
@@ -212,14 +239,7 @@ creditScore = prompt("What is your current credit score?");
 Number(score);
 
 
-//scores variables
-reEnter = "Invalid range, please enter a range between 0 and 850";
-diamond = 800;
-platinum = 700;
-gold = 650;
-silver = 550;
-bronze = 450;
-bad = 449;
+
 
 //Credit score level
 
