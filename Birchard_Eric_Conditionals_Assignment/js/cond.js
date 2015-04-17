@@ -121,13 +121,24 @@ console.log("Name:" + " " + info[0] + "\n" +
 //TODO: end of info ****************************************************************************************************
 
 
-
 //2 conditional statements with an if statement, and validating prompts
 //income determines max with validation
 income = prompt("What is your annual income?");
 
+if(income > "" || NaN)
+{alert("Income:" + " " + "$" + income)
+}else if(income = ""){prompt("Entry was left blank, please enter your annual income:")
+}else(income = NaN){prompt("Please enter a number, or just numbers:")}
+
 //casting income to a number
 Number(income);
+
+//console logging income
+console.log("Annual income:" + " " + "$" + income);
+Number(income);
+
+
+
 
 //if statements with validation
 
