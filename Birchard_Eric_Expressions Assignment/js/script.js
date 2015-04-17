@@ -349,6 +349,9 @@ console.log("Your monthly APR is:" + " " + intMo + "%");                //monthl
 console.log("Interest rate for APR computation" + " " + (int *.01));        //yearly interest rate for computation
 console.log("Interest rate for monthly computation" + " " + (intMo *.01));  // monthly interest rate for computation
 
+//computation interests
+var int2 = int * .01;
+var intMo2 = intMo * .01;
 //user information
 
 
@@ -405,7 +408,8 @@ alert("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:"
 "Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo) + "\n" +
 "And your yearly interest earned would be:" + " " + "$" + avgB * int);
 
-
+alert("avgB" + " " + avgB + "\n" + "intMo" + " " + intMo2 + "\n" + "int" + " " + int2);
+console.log("avgB" + " " + avgB + "\n" + "intMo" + " " + intMo2 + "\n" + "int" + " " + int2);
 /*
 
 Entered my contact information and it displayed correctly.
@@ -415,6 +419,10 @@ Entered ten 100 deposits and got an average deposit of 100.
 Entered ten $50 withdraws and got an average of 50.
 
 Calculated a very rough average balance of $500.
+
+Entered APR of 12 and got 12% and 1% respectively.
+
+
 
 
 
