@@ -61,7 +61,7 @@ running = startingBal - w;                                                  //ru
 alert("Balance after withdraw:" + " " + "$" + running );                    //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running );              //balance after withdraw
 
-d = prompt("End amount of deposit \n If not deposit enter the number 0:");  //First deposit
+d = prompt("Enter amount of deposit \n If no deposit enter the number 0:");  //First deposit
 d = Number(d);                                                              //casting var d string to number
 alert("Deposit:" + " " + "$" + d);                                          //deposit
 console.log("Deposit:" + " " + "$" + d);                                    //deposit
@@ -87,7 +87,7 @@ running -= w1;                                                                  
 alert("Balance after withdraw:" + " " + "$" + running);                         //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running);                   //balance after withdraw
 
-d1 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d1 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");    //First deposit
 d1 = Number(d1);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d1);                                             //deposit
 console.log("Deposit:" + " " + "$" + d1);                                       //deposit
@@ -113,7 +113,7 @@ running -= w2;                                                                  
 alert("Balance after withdraw:" + " " + "$" + running);                         //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running);                   //balance after withdraw
 
-d2 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d2 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");    //First deposit
 d2 = Number(d2);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d2);                                             //deposit
 console.log("Deposit:" + " " + "$" + d2);                                       //deposit
@@ -140,7 +140,7 @@ running -= w3;                                                                  
 alert("Balance after withdraw:" + " " + "$" + running );                        //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running );                  //balance after withdraw
 
-d3 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d3 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");    //First deposit
 d3 = Number(d3);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d3);                                             //deposit
 console.log("Deposit:" + " " + "$" + d3);                                       //deposit
@@ -169,7 +169,7 @@ running -= w4;                                                                  
 alert("Balance after withdraw:" + " " + "$" + running );                        //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running );                  //balance after withdraw
 
-d4 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d4 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");     //First deposit
 d4 = Number(d4);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d4);                                             //deposit
 console.log("Deposit:" + " " + "$" + d4);                                       //deposit
@@ -198,7 +198,7 @@ running -= w5;                                                                  
 alert("Balance after withdraw:" + " " + "$" + running );                        //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running );                  //balance after withdraw
 
-d5 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d5 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");    //First deposit
 d5 = Number(d5);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d5);                                             //deposit
 console.log("Deposit:" + " " + "$" + d5);                                       //deposit
@@ -224,7 +224,7 @@ running -= w6;                                                                  
 alert("Balance after withdraw:" + " " + "$" + running );                        //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running );                  //balance after withdraw
 
-d6 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d6 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");     //First deposit
 d6 = Number(d6);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d6);                                             //deposit
 console.log("Deposit:" + " " + "$" + d6);                                       //deposit
@@ -252,7 +252,7 @@ running -= w7;                                                                  
 alert("Balance after withdraw:" + " " + "$" + running );                        //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running );                  //balance after withdraw
 
-d7 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d7 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");     //First deposit
 d7 = Number(d7);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d7);                                             //deposit
 console.log("Deposit:" + " " + "$" + d7);                                       //deposit
@@ -280,7 +280,7 @@ running -= w8;                                                                  
 alert("Balance after withdraw:" + " " + "$" + running);                         //balance after withdraw
 console.log("Balance after withdraw:" + " " + "$" + running);                   //balance after withdraw
 
-d8 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d8 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");     //First deposit
 d8 = Number(d8);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d8);                                             //deposit
 console.log("Deposit:" + " " + "$" + d8);                                       //deposit
@@ -308,7 +308,7 @@ running -= w9;                                                                  
 alert("Balance after withdraw:"  + " " + "$" + running);                        //balance after withdraw
 console.log("Balance after withdraw:"  + " " + "$" + running);                  //balance after withdraw
 
-d9 = prompt("End amount of deposit \n If not deposit enter the number 0:");     //First deposit
+d9 = prompt("Enter amount of deposit \n If no deposit enter the number 0:");     //First deposit
 d9 = Number(d9);                                                                //casting var d string to number
 alert("Deposit:" + " " + "$" + d9);                                             //deposit
 console.log("Deposit:" + " " + "$" + d9);                                       //deposit
@@ -345,9 +345,9 @@ alert("Your monthly APR is:" + " " + intMo + "%");                      //monthl
 console.log("Your staring balance is:" + " " + "$" + startingBal);      //console logging starting balance
 console.log("Your APR is:" + " " + int + "%");                          //console logging APR
 console.log("Your monthly APR is:" + " " + intMo + "%");                //monthly interest rate
-int *= .01; console.log("Interest rate for computation" + " " + int);   //yearly interest rate for computation
-alert("Interest rate for computation" + " " + intMo);                   // monthly interest rate for computation
-console.log("Interest rate for computation" + " " + intMo);             // monthly interest rate for computation
+
+console.log("Interest rate for APR computation" + " " + (int *.01));        //yearly interest rate for computation
+console.log("Interest rate for monthly computation" + " " + (intMo *.01));  // monthly interest rate for computation
 
 //user information
 
@@ -371,11 +371,12 @@ tenDep = [d, d1, d2, d3, d4, d5, d6, d7, d8, d9];                       //consol
 console.log("Deposits:" + " " + incDep + "\n" + tenDep);                //ten deposits
 
 var avgD = (d + d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9)/incDep;     //average deposits
-
+var avgD2 = (d + d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9);
+var avgW2 = (w + w1 + w2 + w3 + w4 + w5 + w6 + w7+ + w8 + w9);
 
 console.log("Your average deposit is:" + " " + "$" + avgD);             //console log average deposit
 
-var avgB = avgW - avgD;                                                 //average balance
+var avgB = avgD2 - avgW2;                                                 //average balance
 
 console.log("Your average balance is:" + " " + "$" + avgB);             //console log average balance
 
@@ -383,7 +384,7 @@ console.log("Your average balance is:" + " " + "$" + avgB);             //consol
 //monthly interest earned if balance stayed the same
 
 
-console.log("If your average stayed at" + " " + avgB + " " + "\n" +
+console.log("If your average stayed at" + " " + "$" + avgB + " " + "\n" +
  "Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo));
 
 
@@ -393,6 +394,7 @@ console.log("And your yearly interest earned would be:" + " " + "$" + avgB * int
 
 //concatenation of contact information
 
+
 alert("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:" + " " + phone + "\n" +
 "Withdraws:" + incWith +  "\n" + tenWithdraw + "\n" +
 "Your average withdraw is:" + " " + "$" + avgW + "\n" +
@@ -400,7 +402,7 @@ alert("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:"
 "Your average deposit is:" + " " + "$" + avgD + "\n" + "\n" +
 "Your average balance is:" + " " + "$" + avgB + "\n" +
 "If your average stayed at" + " " + "$" + avgB + " " + "\n" +
-"Then your monthly interest earned would be:" + " " + "$" + (avgB * (intMo/ 12)) + "\n" +
+"Then your monthly interest earned would be:" + " " + "$" + (avgB * intMo) + "\n" +
 "And your yearly interest earned would be:" + " " + "$" + avgB * int);
 
 
@@ -408,15 +410,13 @@ alert("Name:" + " " + name + "\n" + "Address:" + " " + address + "\n" + "Phone:"
 
 Entered my contact information and it displayed correctly.
 
-Entered a starting balance of 1000, and various withdraws.  Minus 50 had a balance of 950,
+Entered ten 100 deposits and got an average deposit of 100.
 
-adding 100 made a balance of 1050 and so on.  Both month interest earned, and yearly displayed as expected.
+Entered ten $50 withdraws and got an average of 50.
 
-And the array of all withdraws and deposits displayed via my arrays,
+Calculated a very rough average balance of $500.
 
-although I need some major formatting knowledge in the future.
 
-Alerts change a great deal of things and is likely a much more correct way to do this.
 
  */
 

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6e7f6e8-a5cf-4e91-8884-593dc62e4283" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/js Template.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/cond.js" afterPath="$PROJECT_DIR$/js/cond.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c6e7f6e8-a5cf-4e91-8884-593dc62e4283" name="Default" comment="" />
     <ignored path="Birchard_Eric_Conditionals_Assignment.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
