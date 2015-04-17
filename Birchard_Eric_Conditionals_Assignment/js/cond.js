@@ -210,7 +210,7 @@ loanLn >= 60 ? jobLength = prompt("Restart loan application process, invalid or 
 //TODO: End max loan length code block**********************************************************************************
 
 //time at residence/ wait period
-//TODO: math for wait time for loan/ till loan w/ validation use ternary................................................+++++++++
+//TODO: math for wait time for loan/ till loan w/ validation use ternary................................................
 
 residence = prompt("How long have you lived at your current residence in months?");
 //casting string to number
@@ -230,9 +230,14 @@ wait = 24 - residence;
 residence >= 24 ? alert("Length of time at current residence qualifies for the loan process") :
     alert("You need to wait" + " " + wait + " " + "months to apply");
 
+//TODO: End of residence code block*************************************************************************************
 
+
+
+//TODO: credit score math w/ validation.................................................................................
 //credit score determines interest rate
-//TODO: credit score math w/ validation
+
+
 creditScore = prompt("What is your current credit score?");
 
 //casting variable score to a number
