@@ -54,7 +54,7 @@ bad = 449;
 
 //account holders name and validation for empty problem
 name = prompt("Please enter your full name:");
-if(name === "") {alert("Entry was left blank, please enter your full name:")
+if(name === "") {prompt("Entry was left blank, please enter your full name:")
 }else{Alert("Name:" + " " + name)}
 
 //console logging name
@@ -64,7 +64,7 @@ console.log("Name:" + " " + name);
 //account holders address
 address = prompt("enter your complete address:");
 if(address === "")
-{alert("Entry was left blank, please enter your full address:")
+{prompt("Entry was left blank, please enter your full address:")
     }else{alert("Address:" + " " + address)}
 
 //console logging name
@@ -73,7 +73,7 @@ console.log("Address:" + " " + address);
 
 //contact phone number
 phone = prompt("Enter contact number:");
-if(phone === "") {alert("Entry was left blank, please make an entry:")
+if(phone === "") {prompt("Entry was left blank, please make an entry:")
 }else{alert("Phone:" + " " + phone)}
 
 //console logging name
@@ -84,9 +84,9 @@ console.log("Phone:" + " " + phone);
 //Checking balance
 checkingBal = prompt("Enter your checking account balance");
 
-if(checkingBal === "")
-{alert("Checking balance:" + " " + "$" + checkingBal)
-}else{checkingBal = prompt("Entry was left blank, please enter your checking balance:")}
+if(checkingBal === "") {
+    prompt("Entry was left blank, please enter your checking balance:")
+}else{alert("Checking balance:" + " " + "$" + checkingBal)}
 
 //console logging name
 console.log("Checking balance:" + " " + "$" + checkingBal);
@@ -94,13 +94,12 @@ Number(checkingBal);
 
 
 
-
 //Other investments balance total
 otherBal = prompt("Enter your any other investments holdings total liquid balance");
 
-if(otherBal > "")
-{alert("Liquid cash assets total:" + " " + "$" + otherBal)
-}else{otherBal = prompt("Entry was left blank, please enter liquid assets cash total:")}
+if(otherBal === "") {
+    prompt("Entry was left blank, please enter liquid assets cash total:")
+}else{alert("Liquid cash assets total:" + " " + "$" + otherBal)}
 
 //console logging other investments total
 console.log("Liquid assets cash total:" + " " + "$" + otherBal);
