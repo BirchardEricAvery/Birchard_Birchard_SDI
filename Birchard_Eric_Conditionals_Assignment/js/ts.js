@@ -1,13 +1,8 @@
-var displayRate;
-var rate;
-var creditScore;
-var level;
 
-//Getting credit score variable
-creditScore = prompt("What is your current credit score?");
-//casting string to a number
-Number(creditScore);
-console.log("creditScore number?" + " " + creditScore);
+
+
+
+
 score = creditScore;
 console.log("score" + " " + score);
 //I've tried < > <= >= || && and still can't seem to get this to work..?

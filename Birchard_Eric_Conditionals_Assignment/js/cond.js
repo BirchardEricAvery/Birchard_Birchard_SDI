@@ -195,33 +195,45 @@ console.log(qual);
 //time at current job determines length of loan
 //TODO: math for length of loan w/ validation use ternary...............................................................
 
-jobLength = prompt("How long have you been employed at your current employer?");
+//getting job length
+jobLength = prompt("How long  in months have you been employed at your current employer?");
+
+if(jobLength === ""){prompt("Entry left blank, please enter a number of months employed at current employer:")
+}else if(jobLength === 0){prompt("Please enter a number greater than Zero:")
+}else{alert("Current time at current employer in months:" + " " + jobLength)}
+
+//casting jobLength to a number
 Number(jobLength);
 
-jobLength > 0 ? console.log("jobLength entered correctly:" + " " + "$" + jobLength) :
-     jobLenth = prompt("Please enter again in numbers only for your debt to income ratio:");
+//ternary for job length
+jobLength > 1 ? console.log("jobLength entered correctly:" + " " + "$" + jobLength) :
+     jobLenth = prompt("Please enter again in numbers only for max :");
+
+//casting jobLength to a number
 Number(jobLength);
 
 loanLn = jobLength * .5;
 
-loanLn >= 60 ? jobLength = prompt("Restart loan application process, invalid or unrealistic input") :
+loanLn < 1 ? jobLength = prompt("Restart loan application process, invalid or unrealistic input") :
     alert("You max loan term is:" + " " + loanLn);
 
 //TODO: End max loan length code block**********************************************************************************
 
-//time at residence/ wait period
+
 //TODO: math for wait time for loan/ till loan w/ validation use ternary................................................
 
+//time at residence/ wait period
 residence = prompt("How long have you lived at your current residence in months?");
+
+//residence validation
+if(residence === 0){prompt("Please in enter a number greater than Zero:")
+}else if(residence === ""){prompt("Entry left blank, please enter time at residence in months:")
+}else if(isNaN(residence)){prompt("Entery was not a number, please enter time at residence in numbers:)"
+}else{alert("Time at residence:" + " " + residence + " " + "months.")}
+
 //casting string to number
 Number(residence);
 
-//ternary with validation for residence
-residence  > 0 ? console.log("residence entered correctly:" + " " + residence + " " + "months") :
-    residence = prompt("Please enter again in numbers only for your time at current residence:");
-
-//re-casting in case variable was entered wrong and needed to be re-entered
-Number(residence);
 
 //wait variable
 wait = 24 - residence;
@@ -234,21 +246,49 @@ residence >= 24 ? alert("Length of time at current residence qualifies for the l
 
 
 
-//TODO: credit score math w/ validation.................................................................................++++++++++
+//TODO: credit score math w/ validation.................................................................................
 //credit score determines interest rate
 
 var displayRate;
 var rate;
 var creditScore;
 var level;
+
 //Getting credit score variable
 creditScore = prompt("What is your current credit score?");
+
 //casting string to a number
 Number(creditScore);
+
 console.log("creditScore number?" + " " + creditScore);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 score = creditScore;
 console.log("score" + " " + score);
-//I've tried < > <= >= || && and still can't seem to get this to work..?
+
 
 if(creditScore > 850){prompt("Please enter a number less than 851")
 }else if(creditScore < 0){prompt("Please enter a number greater than 0")
