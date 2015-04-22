@@ -126,25 +126,26 @@ console.log("Name:" + " " + info[0] + "\n" +
 
 //TODO: end of info ****************************************************************************************************
 
+//TODO: income..........................................................................................................
 
 //2 conditional statements with an if statement, and validating prompts
 //income determines max potential loan with validation
 income = prompt("Enter your annual income in numbers only:");
 
+if(income === 0) {
+    prompt("Enter a number greater than Zero:")
+}else if(income === "") {
+    prompt("Entry was left blank, please enter a numebr:")
+}else if(isNaN(income)){prompt("Please enter numbers only:")
+}else{alert("Annual income:" + " " + "$" + income)}
+
+//console log income
+console.log("Income entered:" + " " + income)
+
+//casting income to a number
 Number(income);
 
-if(income > 0)
-{alert("Annual income:" + " " + "$" + income)
-}else if(income = String){income = prompt("Please enter again in numbers only:")}
-
-//console logging name
-alert("Annual income:" + " " + "$" + income);
-console.log("Annual income:" + " " + "$" + income);
-Number(income);
-
-
-
-//begin loan max calc with validation
+//begin loan max calculations with validation
 loanMax = income;
 
 //debt to income ratio determines limiter via percent calc with validation
@@ -155,14 +156,19 @@ debt = prompt("What is your current debt?");
 
 Number(debt);
 
-if(debt > 0){console.log("Debt entered correctly:" + " " + "$" + debt)
-}else if(debt = String){debt = prompt("Please enter again in numbers only for your debt to income ratio:")}
+if(debt < 0){prompt("Please enter a number greater than a negative number:")
+}else if(debt === "") {
+    prompt("Entry left blank, please enter total debt")
+}else if(isNaN(debt)){prompt("Please enter numbers only:")
+}else{alert("Debt entered correctly:" + " " + "$" + debt)}
 
 //alert and console logging debt
 alert("Debt:" + " " + "$" + debt);
+
+//console log total debt
 console.log("Debt:" + " " + "$" + debt);
 
-//Casting string to a number
+//Casting debt to a number
 Number(debt);
 
 //Mathematical ratio
