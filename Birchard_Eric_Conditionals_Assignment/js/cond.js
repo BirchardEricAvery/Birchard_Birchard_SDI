@@ -54,21 +54,18 @@ bad = 449;
 
 //account holders name and validation for empty problem
 name = prompt("Please enter your full name:");
-if(name > "")
-{alert("Name:" + " " + name)
-}else{name = prompt("Entry was left blank, please enter your full name:")}
+if(name === "") {alert("Entry was left blank, please enter your full name:")
+}else{Alert("Name:" + " " + name)}
 
 //console logging name
 console.log("Name:" + " " + name);
 
 
-
 //account holders address
 address = prompt("enter your complete address:");
-
-if(address > "")
-{alert("Address:" + " " + address)
-}else{address = prompt("Entry was left blank, please enter your full address:")}
+if(address === "")
+{alert("Entry was left blank, please enter your full address:")
+    }else{alert("Address:" + " " + address)}
 
 //console logging name
 console.log("Address:" + " " + address);
@@ -76,10 +73,8 @@ console.log("Address:" + " " + address);
 
 //contact phone number
 phone = prompt("Enter contact number:");
-
-if(phone > "")
-{alert("Phone:" + " " + phone)
-}else{phone = prompt("Entry was left blank, please enter your contact number:")}
+if(phone === "") {alert("Entry was left blank, please make an entry:")
+}else{alert("Phone:" + " " + phone)}
 
 //console logging name
 console.log("Phone:" + " " + phone);
@@ -89,7 +84,7 @@ console.log("Phone:" + " " + phone);
 //Checking balance
 checkingBal = prompt("Enter your checking account balance");
 
-if(checkingBal > "")
+if(checkingBal === "")
 {alert("Checking balance:" + " " + "$" + checkingBal)
 }else{checkingBal = prompt("Entry was left blank, please enter your checking balance:")}
 
@@ -252,7 +247,7 @@ console.log("score" + " " + score);
 
 if(creditScore > 850){prompt("Please enter a number less than 851")
 }else if(creditScore < 0){prompt("Please enter a number greater than 0")
-}else if(creditScore = ""){prompt("Please enter a number between 1 and 850")
+}else if(creditScore === ""){prompt("Please enter a number between 1 and 850")
 }else if(creditScore >= 800){level = "You are at Platinum level!"
 }else if(creditScore > 700 && creditScore < 799){level = "You are at the Diamond level!"
 }else if(creditScore <= 699 && creditScore >= 600){level = "You are at the Gold level."
@@ -343,31 +338,3 @@ if(score = diamond){rate = .02
 //upload to FSO
 //check to make sure code is in repository, and zip file
 
-/*
-notes:
-
-
- Logical operators (boolean or comparisons only)
-    And                 &&
-    Or                  ||
-    Not                 !
-
-    TRUE    TRUE        &&  ||
-    TRUE    FALSE           ||
-    FALSE   TRUE            ||  !
-    FALSE   FALSE               !
-
-//Conditional Logic - Logical operators AND if our paycheck is over 300
-
-var budget = 100;
-var iPhonePrice = 199.99
-var wonLottery = true;
-
-//if the price of the phone is less than our budget
-
-if(iPhonePrice < budget || wonLottery === true){
-    console.log("We can buy the phone!");
-}else{
-    console.log("No phone for you!!");
-}
-*/
