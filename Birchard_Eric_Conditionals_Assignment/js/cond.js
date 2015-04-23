@@ -250,9 +250,9 @@ Number(residence);
 console.log("Time at residence:" + " " + residence + " " + "months.");
 
 //To little employment or time at residence
-if(jobLength = 0 || 1){alert("Please re-apply after at least 24 months:")
-}else if(residence = 0 || 1){alert("Please re-apply after at least 24 months")}
-else{console.log("Continuing loan process")}
+
+if(jobLength < 1 && residence < 1){alert("Please re-apply after at least 24 months:")
+}else{console.log("Continuing loan process")}
 
 //TODO: End of residence code block*************************************************************************************
 
