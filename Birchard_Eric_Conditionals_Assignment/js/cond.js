@@ -26,6 +26,7 @@ var jobLength;
 var loanLn;
 var residence;
 var score;
+var payment;
 
 
 //Credit Score Calc
@@ -190,6 +191,7 @@ displayRatio >= 60 ? qual = "Bring debt to income ratio below 60% to qualify for
 alert(qual);
 console.log(qual);
 
+
 //TODO: End of debt to income code block********************************************************************************
 
 
@@ -332,12 +334,38 @@ if (!isNaN(rate)) {
 
 //TODO: Payment calculator, legnth of loan, interest rate...............................................................
 
-//array for payment, legnth, interest rate, level
+//array for your information summary, maximum payment, length, interest rate, at level
+
+//payment calculation
+loanReal = loanMax - debt;
+flatRate = (rate * loanReal) + loanReal;
+
+payment = flatRate / loanLn;
+
+collateral = checkingBal + otherBal;
+
+//loan array
+var loanArray = [payment, loanLn, rate, level];
 
 
+//display user information
+//Displaying array information:
+    alert("Name:" + " " + info[0] + "\n" +
+    "Address:" + " " + info[1] + "\n" +
+    "Phone:" + " " + info[2] + "\n" +
+    "Checking balance:" + " " + "$" + info[3] + "\n" +
+    "Other balances total:" + " " + "$" +  info[4] + "\n" +
+    "Your" + " " + loanArray[3] + " " + "qualifies you for:" + " " + loanArray[2] +"%" + " " + "loan rate" +  "\n" +
+    "At your maximum loan term/ legnth of" + " " + loanLn + " " + "you flat loan payments would be" + " " + payment);
 
-
-//2 arithmetic operators + -,
+//Displaying information via console log
+console.log("Name:" + " " + info[0] + "\n" +
+"Address:" + " " + info[1] + "\n" +
+"Phone:" + " " + info[2] + "\n" +
+"Checking balance:" + " " + "$" + info[3] + "\n" +
+"Other balances total:" + " " + "$" +  info[4] + "\n" +
+"Your" + " " + loanArray[3] + " " + "qualifies you for:" + " " + loanArray[2] +"%" + " " + "loan rate" +  "\n" +
+"At your maximum loan term/ legnth of" + " " + loanLn + " " + "you flat loan payments would be" + " " + payment);
 
 
 //values in multi-lines comment
