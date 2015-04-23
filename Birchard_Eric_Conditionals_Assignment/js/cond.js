@@ -1,8 +1,9 @@
 /*          Name:       Eric Avery Birchard
             Instructor: Dan Williams
             Assignment: Conditionals Assignment
-            Date:       15, April 2015
+            Date:       22, April 2015
             Class:      SDI
+            Section:    1
             Term:       I
 
  */
@@ -28,6 +29,7 @@ var score;
 
 
 //Credit Score Calc
+var level;          //credit score level string display
 var reEnter;        //851+              reEnter data for value between 0 and 850      
 var diamond;        //800 - 850         2%
 var platinum;       //700 - 799         4%
@@ -35,8 +37,9 @@ var gold;           //650 - 699         12%
 var silver;         //550 - 649         18%
 var bronze;         //450 -             24%
 var bad;            //below 449         ReApply later when score is higher
-var wait            //You need more time at you current job/ residence then reApply
+var wait;           //You need more time at you current job/ residence then reApply
 var rate;           //interest rate
+var creditScore;    //credit score variable
 var displayRate;    //Display interest rate
 
 //scores variables
@@ -55,7 +58,7 @@ bad = 449;
 //account holders name and validation for empty problem
 name = prompt("Please enter your full name:");
 if(name === "") {prompt("Entry was left blank, please enter your full name:")
-}else{Alert("Name:" + " " + name)}
+}else{alert("Name:" + " " + name)}
 
 //console logging name
 console.log("Name:" + " " + name);
@@ -108,7 +111,7 @@ Number(otherBal);
 
 //array for info
 var info;
-info = [name, address, phone, checkingBal, otherBal,];
+info = [name, address, phone, checkingBal, otherBal];
 
 //Displaying information:
 alert("Name:" + " " + info[0] + "\n" +
@@ -140,7 +143,7 @@ if(income === 0) {
 }else{alert("Annual income:" + " " + "$" + income)}
 
 //console log income
-console.log("Income entered:" + " " + income)
+console.log("Income entered:" + " " + income);
 
 //casting income to a number
 Number(income);
@@ -181,7 +184,7 @@ console.log("Your debt to income ratio is:" + " " + displayRatio + "%");
 
 //ternary
 displayRatio >= 60 ? qual = "Bring debt to income ratio below 60% to qualify for loan" :
-    qual = "Your debt to income ratio qualifies for the application process";
+    "Your debt to income ratio qualifies for the application process";
 
 //Final display for debt to income ratio
 alert(qual);
@@ -228,7 +231,7 @@ residence = prompt("How long have you lived at your current residence in months?
 //residence validation
 if(residence === 0){prompt("Please in enter a number greater than Zero:")
 }else if(residence === ""){prompt("Entry left blank, please enter time at residence in months:")
-}else if(isNaN(residence)){prompt("Entery was not a number, please enter time at residence in numbers:)"
+}else if(isNaN(residence)){prompt("Entery was not a number, please enter time at residence in numbers:")
 }else{alert("Time at residence:" + " " + residence + " " + "months.")}
 
 //casting string to number
@@ -249,132 +252,92 @@ residence >= 24 ? alert("Length of time at current residence qualifies for the l
 //TODO: credit score math w/ validation.................................................................................
 //credit score determines interest rate
 
-var displayRate;
-var rate;
-var creditScore;
-var level;
-
 //Getting credit score variable
 creditScore = prompt("What is your current credit score?");
 
 //casting string to a number
 Number(creditScore);
 
-console.log("creditScore number?" + " " + creditScore);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-score = creditScore;
-console.log("score" + " " + score);
-
-
+//Credit score validation and credit score level
 if(creditScore > 850){prompt("Please enter a number less than 851")
 }else if(creditScore < 0){prompt("Please enter a number greater than 0")
 }else if(creditScore === ""){prompt("Please enter a number between 1 and 850")
-}else if(creditScore >= 800){level = "You are at Platinum level!"
-}else if(creditScore > 700 && creditScore < 799){level = "You are at the Diamond level!"
-}else if(creditScore <= 699 && creditScore >= 600){level = "You are at the Gold level."
-}else if(creditScore <= 599 && creditScore >= 500){level = "You are at the Silver level!"
-}else if(creditScore < 450 && creditScore < 499){level = "Bronze level."
-}
+}else if(creditScore >= 800){alert("You are at Platinum level!")
+}else if(creditScore >= 700){alert("You are at the Diamond level!")
+}else if(creditScore >= 650){alert("You are at the Gold level.")
+}else if(creditScore >= 550){alert("You are at the Silver level!")
+}else if(creditScore >= 450){alert("Bronze level.")}
 
-alert(level);
-
-//casting variable creditScore to a number
+//casting string to a number
 Number(creditScore);
-console.log("creditScore 1st number" + " " + score);
+
+//console log creditScore number
+console.log("creditScore number:" + " " + creditScore);
 
 //rate if statements
 
+//assigning creditScore variable to score
+score = creditScore;
+
+//rate if statements
 if(score >= 800){rate = .02
 }else if(score >= 700){rate = .04
 }else if(score >= 650){rate = .12
 }else if(score >= 550){rate = .18
 }else if(score >= 450){rate = .24
-}else if(score < 450){console.log("Credit score is bad:" + " " + creditScore)}
+}else if(score < 449){rate = NaN
+}
 
-rate1 = rate;
-console.log("rate" + " " + rate1);
-Number(rate1);
-displayRate = rate1 * 100;
+//console log creditScore as score
+console.log("score" + " " + score);
 
-//console log interest rate
-console.log("Interest rate:" + " " + displayRate + "%");
+//casting rate to a number
+Number(rate);
 
-alert(level + "\n" +
-"Which qualifies you for an interest rate of:" + " " + displayRate + "%");
+//Credit level
+if(rate = .02){level = "Platinum"
+}else if(rate = .04){level = "Diamond"
+}else if(rate = .12){level = "Gold"
+}else if(rate = .18){level = "Silver"
+}else if(rate = .24){level = "Bronze"
+}else if(isNaN(rate)){level = "BAD"}
 
 
+//casting variable creditScore to a number
 Number(creditScore);
 
+//console log credit score variable check
+console.log("creditScore number" + " " + score);
 
-//Credit score level
+rate1 = rate;
 
+//if(isNaN(rate))console.log("rate" + " " + rate1);
 
+displayRate = rate1 * 100;
 
-if(creditScore > 851){score = reEnter
+if (!isNaN(rate)) {
+    alert(level + "\n" + "Which qualifies you for an interest rate of:" + " " + displayRate + "%")
+} else {
+    alert("Credit score is below required minimum, please re-apply when your score is above 450")
+}
 
-}else if(creditScore <= -1){score = reEnter
-
-}else if(creditScore >= 800){score = diamond
-
-}else if(creditScore >= 700){score = platinum
-
-}else if(creditScore >= 650){score = gold
-
-}else if(creditScore >= 550){score = silver
-
-}else if(creditScore >= 450){score = bronze
-
-}else if(creditScore < 69){score = bad}
-
-//rate if statements
-
-if(score = diamond){rate = .02
-
-}else if(score = platinum){rate = .04
-
-}else if(score = gold){rate = .12
-
-}else if(score = silver){rate = .18
-
-}else if(score = bronze){rate = .24
-
-}else(score = bad);
+//console log status
+if (!isNaN(rate)) {
+    console.log(level + "\n" + "Which qualifies you for an interest rate of:" + " " + displayRate + "%")
+} else {
+    console.log("Credit score is below required minimum, please re-apply when your score is above 450")
+}
+//TODO: End credit score level, rate, and qualification code block******************************************************
 
 
-//TODO: Payment calculator math
+//TODO: Payment calculator, legnth of loan, interest rate...............................................................
+
+//array for payment, legnth, interest rate, level
+
+
+
+
 //2 arithmetic operators + -,
-//1 logical operator &&, ||, !
-
-
-
-//TODO: Display final information
-//concatenation of strings and variables
-
-
 
 
 //values in multi-lines comment
