@@ -200,6 +200,7 @@ displayRatio >= 60 ? qual = "Bring debt to income ratio below 60% to qualify for
     "Your debt to income ratio qualifies for the application process";
 
 
+
 //TODO: End of debt to income code block********************************************************************************
 
 
@@ -224,6 +225,7 @@ Number(jobLength);
 jobLength > 1 ? console.log("jobLength entered correctly:" + " " + jobLength) :
      jobLenth = prompt("Please enter again in numbers only for max :");
 
+Number(jobLength);
 loanLn = jobLength * .5;
 
 loanLn < 1 ? jobLength = prompt("Restart loan application process, invalid or unrealistic input") :
@@ -234,18 +236,23 @@ loanLn < 1 ? jobLength = prompt("Restart loan application process, invalid or un
 
 //TODO: math for wait time for loan/ till loan w/ validation use ternary................................................
 
-//time at residence/ wait period
+//time at residence
 residence = prompt("How long have you lived at your current residence in months?");
 
 //residence validation
 if(residence === 0){prompt("Please in enter a number greater than Zero:")
     }else if(residence === ""){prompt("Entry left blank, please enter time at residence in months:")
-        }else if(isNaN(residence)){prompt("Entery was not a number, please enter time at residence in numbers:")
+        }else if(isNaN(residence)){prompt("Entry was not a number, please enter time at residence in numbers:")
             }else{alert("Time at residence:" + " " + residence + " " + "months.")}
 
 //casting string to number
 Number(residence);
 console.log("Time at residence:" + " " + residence + " " + "months.");
+
+//To little employment or time at residence
+if(jobLength = 0 || 1){alert("Please re-apply after at least 24 months:")
+}else if(residence = 0 || 1){alert("Please re-apply after at least 24 months")}
+else{console.log("Continuing loan process")}
 
 //TODO: End of residence code block*************************************************************************************
 
