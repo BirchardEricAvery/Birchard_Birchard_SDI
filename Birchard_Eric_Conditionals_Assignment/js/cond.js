@@ -25,7 +25,6 @@ var displayRatio;
 var jobLength;
 var loanLn;
 var residence;
-var score;
 var payment;
 
 
@@ -38,7 +37,6 @@ var gold;           //650 - 699         12%
 var silver;         //550 - 649         18%
 var bronze;         //450 -             24%
 var bad;            //below 449         ReApply later when score is higher
-var wait;           //You need more time at you current job/ residence then reApply
 var rate;           //interest rate
 var creditScore;    //credit score variable
 var displayRate;    //Display interest rate
@@ -57,9 +55,13 @@ bad = 449;
 //TODO begin aplicant validations, castings.............................................................................
 
 //account holders name and validation for empty problem
+
+//ternary for name
 name = prompt("Please enter your full name:");
-if(name === "") {prompt("Entry was left blank, please enter your full name:")
-}else{alert("Name:" + " " + name)}
+name === "" ? name = prompt("Entry was left blank, please enter your full name:") :
+alert("Name:" + " " + name);
+
+
 
 //console logging name
 console.log("Name:" + " " + name);
@@ -243,20 +245,14 @@ if(residence === 0){prompt("Please in enter a number greater than Zero:")
 
 //casting string to number
 Number(residence);
-
-//wait variable
-wait = 24 - residence;
-
-//ternary for residence
-residence >= 24 ? alert("Length of time at current residence qualifies for the loan process") :
-    alert("You need to wait" + " " + wait + " " + "months to apply");
+console.log("Time at residence:" + " " + residence + " " + "months.");
 
 //TODO: End of residence code block*************************************************************************************
 
 
 
 //TODO: credit score math w/ validation.................................................................................
-/
+
 //credit score determines interest rate
 
 //Getting credit score variable
@@ -352,10 +348,12 @@ flatRate = (rate * loanReal) + loanReal;
 payment = flatRate / loanLn;
 
 //collateral
-collateral = checkingBal + otherBal;
+//casting collateral variables
+//Number(checkingBal); Number(otherBal);
+//collateral = checkingBal + otherBal;
 
 //loan array
-var loanArray = [payment, loanLn, rate, level, collateral, loanReal];
+var loanArray = [payment, loanLn, displayRate, level, loanReal];
 
 
 //display user information
@@ -366,7 +364,7 @@ var loanArray = [payment, loanLn, rate, level, collateral, loanReal];
     "Checking balance:" + " " + "$" + info[3] + "\n" +
     "Other balances total:" + " " + "$" +  info[4] + "\n" +
     "Your" + " " + loanArray[3] + " " + "qualifies you for:" + " " + loanArray[2] +"%" + " " + "loan rate." +  "\n" +
-    "Your maximum loan amount is" + " " + "$" + loanArray[5] + " " + ", and collateral of:" + " " + "$" + loanArray[4] + "\n" +
+    "Your maximum loan amount is" + " " + "$" + loanArray[5] + " " + "\n" +
     "At your maximum loan term/ legnth of" + " " + loanArray[1] + " " + "months." + "\n" +
     "your flat loan payments would be" + " " + "$" + loanArray[0]);
 
@@ -377,15 +375,52 @@ console.log("Name:" + " " + info[0] + "\n" +
     "Checking balance:" + " " + "$" + info[3] + "\n" +
     "Other balances total:" + " " + "$" +  info[4] + "\n" +
     "Your" + " " + loanArray[3] + " " + "qualifies you for:" + " " + loanArray[2] +"%" + " " + "loan rate." +  "\n" +
-    "Your maximum loan amount is" + " " + "$" + loanArray[5] + " " + ", and collateral of:" + " " + "$" + loanArray[4] + "\n" +
+    "Your maximum loan amount is" + " " + "$" + loanArray[5] + "\n" +
     "At your maximum loan term/ legnth of" + " " + loanArray[1] + " " + "months." + "\n" +
     "your flat loan payments would be" + " " + "$" + loanArray[0]);
 
 
-//values in multi-lines comment
+/* values in multi-lines comment
+Entered my full name and was displayed correctly, entered it blank and was re-prompted
+
+Entered 1137 E. Broadmor Dr, Tempe, AZ 85282 and was displayed both via console log, and alert
+Entered a blank for my address and was re-prompted
+
+Entered my phone number and it was displayed via console log, and alert
+Entered a blank, and was re-prompted
+
+Entered my checking balance of 10000, and it displayed aS $10000 in both console, and alert
+Entered this with a string, and was re-prompted for a number
+
+Entered 5000 for liquid assets, it displayed in console log and alert as $5000
+Entered a string and was re-prompted for a number
+
+Once all applicant information was entered it was displayed as a whole in console log and alert
 
 
-//compress into zip file called, Birchard_Eric_Conditionals_Assignment
-//upload to FSO
-//check to make sure code is in repository, and zip file
+Entered an annual income as string and was re-prompted
+Entered my annual income as 40000 and it displayed $40000 in console, and alert
+
+Entered my debt as 5000 and it displayed as $5000 in console and alert
+Entered as a string and was re-prompted
+
+Debt to income ratio was then displayed in the console and alert as 12.5%
+
+For legnth of employment I put 48 for 48 months and was displayed as 48 months in console and alert
+Entered as blank and was re-prompted
+
+Max loan term came up as 24 months in alert and console as expected
+
+Entered 60 for time at residence and was displayed as 60 months in console and alert
+
+Entered 600 for credit score and got Silver level displayed in alert and console
+Intrest rate displayed in alert was 18% as coded
+
+Max loan came out to 24 months at 18% with payments of $1720.83 as predicted.
+
+I removed collateral variable because even though I used Number(checkingBal) and Number(otherBal)
+collateral still added them as strings.  These were commented out so you could see what I did.
+
+
+Still have some very minor things that need fixed, but the deadline has arrived.
 
