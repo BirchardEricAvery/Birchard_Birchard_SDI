@@ -14,6 +14,7 @@ var address;
 var phone;
 var checkingBal;
 var otherBal;
+var collateral;
 
 //loan variables
 var income;
@@ -111,6 +112,12 @@ if(otherBal === ""){prompt("Entry was left blank, please enter liquid assets cas
 
 //casting otherBal to a number
 Number(otherBal);
+
+//collateral variable
+collateral = checkingBal + otherBal;
+Number(collateral);
+alert("Collateral:" + " " + "$" + collateral);
+console.log("Collateral:" + " " + "$" + collateral);
 
 
 //console logging other investments total
@@ -360,7 +367,7 @@ payment = flatRate / loanLn;
 //collateral = checkingBal + otherBal;
 
 //loan array
-var loanArray = [payment, loanLn, displayRate, level, loanReal];
+var loanArray = [payment, loanLn, displayRate, level, loanReal, collateral, checkingBal];
 
 
 //display user information
@@ -368,10 +375,10 @@ var loanArray = [payment, loanLn, displayRate, level, loanReal];
     alert("Name:" + " " + info[0] + "\n" +
     "Address:" + " " + info[1] + "\n" +
     "Phone:" + " " + info[2] + "\n" +
-    "Checking balance:" + " " + "$" + info[3] + "\n" +
-    "Other balances total:" + " " + "$" +  info[4] + "\n" +
+    "Checking balance:" + " " + "$" + info[6] + "\n" +
+    "Other balances and checking total:" + " " + "$" +  info[5] + "\n" +
     "Your" + " " + loanArray[3] + " " + "qualifies you for:" + " " + loanArray[2] +"%" + " " + "loan rate." +  "\n" +
-    "Your maximum loan amount is" + " " + "$" + loanArray[5] + " " + "\n" +
+    "Your maximum loan amount is" + " " + "$" + loanArray[4] + " " + "\n" +
     "At your maximum loan term/ legnth of" + " " + loanArray[1] + " " + "months." + "\n" +
     "your flat loan payments would be" + " " + "$" + loanArray[0]);
 
@@ -379,10 +386,10 @@ var loanArray = [payment, loanLn, displayRate, level, loanReal];
 console.log("Name:" + " " + info[0] + "\n" +
     "Address:" + " " + info[1] + "\n" +
     "Phone:" + " " + info[2] + "\n" +
-    "Checking balance:" + " " + "$" + info[3] + "\n" +
-    "Other balances total:" + " " + "$" +  info[4] + "\n" +
+    "Checking balance:" + " " + "$" + info[6] + "\n" +
+    "Other balances plus checking total:" + " " + "$" +  info[5] + "\n" +
     "Your" + " " + loanArray[3] + " " + "qualifies you for:" + " " + loanArray[2] +"%" + " " + "loan rate." +  "\n" +
-    "Your maximum loan amount is" + " " + "$" + loanArray[5] + "\n" +
+    "Your maximum loan amount is" + " " + "$" + loanArray[4] + "\n" +
     "At your maximum loan term/ legnth of" + " " + loanArray[1] + " " + "months." + "\n" +
     "your flat loan payments would be" + " " + "$" + loanArray[0]);
 
