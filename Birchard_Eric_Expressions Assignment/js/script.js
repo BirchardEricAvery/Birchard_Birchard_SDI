@@ -17,7 +17,7 @@ var tenWithdraw;                    //list out withdraws (numerical) array
 var int;                            //interest rate
 var incDep; var incWith;            //incrementing and decrementing deposits and withdraws
 incWith = 0; incDep = 0;            //Beginning increment and decrement values
-var intMo                           //monthly interest rate
+var intMo;                           //monthly interest rate
 
 var w; var w1; var w2; var w3; var w4; var w5; var w6; var w7; var w8; var w9; //for ten withdraws
 var d; var d1; var d2; var d3; var d4; var d5; var d6; var d7; var d8; var d9; //for ten deposits
@@ -43,7 +43,7 @@ console.log("Phone number:" + " " + phone);                             //consol
 
 //Starting balance
 startingBal = prompt("Enter your staring balance");                     //prompt for string input from user
-var startingBal = Number(startingBal);                                  //casting string to a number
+startingBal = Number(startingBal);                                  //casting string to a number
 console.log("Starting balance:" + " " + "$" + startingBal);             //console log starting balance
 
 

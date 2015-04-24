@@ -104,7 +104,7 @@ Number(checkingBal);
 
 //Other investments balance total
 otherBal = prompt("Enter your any other investments holdings total liquid balance");
-
+Number(otherBal);
 if(otherBal === ""){prompt("Entry was left blank, please enter liquid assets cash total:")
     }else if(isNaN(otherBal)){otherBal = prompt("Please enter numbers only for liquid assets cash total:")
         }else{alert("Liquid cash assets total:" + " " + "$" + otherBal)}
@@ -113,7 +113,7 @@ if(otherBal === ""){prompt("Entry was left blank, please enter liquid assets cas
 Number(otherBal);
 
 //collateral variable
-//collateral = checkingBal + otherBal;
+//collateral ==== checkingBal + otherBal;
 //Number(collateral);
 //alert("Collateral:" + " " + "$" + collateral);
 //console.log("Collateral:" + " " + "$" + collateral);
