@@ -223,12 +223,12 @@ Number(jobLength);
 
 //ternary for job length
 jobLength > 1 ? console.log("jobLength entered correctly:" + " " + jobLength) :
-     jobLenth = prompt("Please enter again in numbers only for max :");
+     jobLenth = prompt("Please enter again in numbers only for time at corrent employer in months:");
 
 Number(jobLength);
 loanLn = jobLength * .5;
 
-loanLn < 1 ? jobLength = prompt("Restart loan application process, invalid or unrealistic input") :
+loanLn < 1 ? jobLength = prompt("Restart loan process after you have been employed for a longer period") :
     alert("You max loan term is:" + " " + loanLn);
 
 //TODO: End max loan length code block**********************************************************************************
