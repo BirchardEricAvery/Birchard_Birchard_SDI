@@ -14,7 +14,7 @@ var address;
 var phone;
 var checkingBal;
 var otherBal;
-var collateral;
+//var collateral;
 
 //loan variables
 var income;
@@ -99,8 +99,7 @@ Number(checkingBal);
 
 //console logging name
 console.log("Checking balance:" + " " + "$" + checkingBal);
-
-
+Number(checkingBal);
 
 
 //Other investments balance total
@@ -114,10 +113,10 @@ if(otherBal === ""){prompt("Entry was left blank, please enter liquid assets cas
 Number(otherBal);
 
 //collateral variable
-collateral = checkingBal + otherBal;
-Number(collateral);
-alert("Collateral:" + " " + "$" + collateral);
-console.log("Collateral:" + " " + "$" + collateral);
+//collateral = checkingBal + otherBal;
+//Number(collateral);
+//alert("Collateral:" + " " + "$" + collateral);
+//console.log("Collateral:" + " " + "$" + collateral);
 
 
 //console logging other investments total
@@ -367,7 +366,7 @@ payment = flatRate / loanLn;
 //collateral = checkingBal + otherBal;
 
 //loan array
-var loanArray = [payment, loanLn, displayRate, level, loanReal, collateral, checkingBal];
+var loanArray = [payment, loanLn, displayRate, level, loanReal, checkingBal, otherBal];
 
 
 //display user information
@@ -375,8 +374,8 @@ var loanArray = [payment, loanLn, displayRate, level, loanReal, collateral, chec
     alert("Name:" + " " + info[0] + "\n" +
     "Address:" + " " + info[1] + "\n" +
     "Phone:" + " " + info[2] + "\n" +
-    "Checking balance:" + " " + "$" + info[6] + "\n" +
-    "Other balances and checking total:" + " " + "$" +  info[5] + "\n" +
+    "Checking balance:" + " " + "$" + info[5] + "\n" +
+    "Other balances total:" + " " + "$" +  info[6] + "\n" +
     "Your" + " " + loanArray[3] + " " + "qualifies you for:" + " " + loanArray[2] +"%" + " " + "loan rate." +  "\n" +
     "Your maximum loan amount is" + " " + "$" + loanArray[4] + " " + "\n" +
     "At your maximum loan term/ legnth of" + " " + loanArray[1] + " " + "months." + "\n" +
@@ -386,8 +385,8 @@ var loanArray = [payment, loanLn, displayRate, level, loanReal, collateral, chec
 console.log("Name:" + " " + info[0] + "\n" +
     "Address:" + " " + info[1] + "\n" +
     "Phone:" + " " + info[2] + "\n" +
-    "Checking balance:" + " " + "$" + info[6] + "\n" +
-    "Other balances plus checking total:" + " " + "$" +  info[5] + "\n" +
+    "Checking balance:" + " " + "$" + info[5] + "\n" +
+    "Other balances total:" + " " + "$" +  info[6] + "\n" +
     "Your" + " " + loanArray[3] + " " + "qualifies you for:" + " " + loanArray[2] +"%" + " " + "loan rate." +  "\n" +
     "Your maximum loan amount is" + " " + "$" + loanArray[4] + "\n" +
     "At your maximum loan term/ legnth of" + " " + loanArray[1] + " " + "months." + "\n" +
@@ -436,6 +435,7 @@ Max loan came out to 24 months at 18% with payments of $1720.83 as predicted.
 
 I removed collateral variable because even though I used Number(checkingBal) and Number(otherBal)
 collateral still added them as strings.  These were commented out so you could see what I did.
+
 
 
 Still have some very minor things that need fixed, but the deadline has arrived.
