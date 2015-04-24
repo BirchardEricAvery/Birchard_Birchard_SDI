@@ -388,6 +388,8 @@ console.log("Name:" + " " + info[0] + "\n" +
 
 
 /* values in multi-lines comment
+
+
 Entered my full name and was displayed correctly, entered it blank and was re-prompted
 
 Entered 1137 E. Broadmor Dr, Tempe, AZ 85282 and was displayed both via console log, and alert
@@ -431,3 +433,4 @@ collateral still added them as strings.  These were commented out so you could s
 
 Still have some very minor things that need fixed, but the deadline has arrived.
 
+*/
