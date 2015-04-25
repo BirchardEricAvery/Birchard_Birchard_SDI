@@ -39,13 +39,39 @@ console.log(area);
 
 function dogYears(age){ //parameter for storage
     var dogYears = age * 7;
-    alert("Sparky is " + dogYears + " years old.")
-    console.log("Sparky is " + dogYears + " years old.")
+    alert("Sparky is " + dogYears + " years old.");
+    console.log("Sparky is " + dogYears + " years old.");
+    return dogYears;  //funtions is spitting the information out
 }
 //passing information/ value to first parameter
-age1 = prompt("What is Sparky's age?"); Number(age1);
 
+var age1 = prompt("What is Sparky's age?"); Number(age1);
+var ageReturned = dogYears(age1);
 //argument passed in
 dogYears(age1);
 
+//returning values
 
+alert("Returned function parameter: " + ageReturned);
+
+//closures
+
+//anonymous function
+
+var functionName = function(){
+    //code to run
+}
+
+//call anonymous must be declared before called downside
+
+//dog years
+
+var calcArea = function(w, h){
+    //code function runs
+    var area = w * h;
+    return area;
+}
+
+var a = calcArea(20, 30); //
+
+console.log(a);
