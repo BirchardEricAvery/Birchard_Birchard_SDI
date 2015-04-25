@@ -15,6 +15,8 @@
 //Normal function
 
 //re-usable code or function
+var w = 5;
+
 function calcArea(){
     var w = 20;
     var h = 30;
@@ -24,4 +26,7 @@ function calcArea(){
 }
 
 //invocation/ function call
+//using, scoped to function/ variable
 calcArea();
+console.log(w);
+//prints 5 outside as console is outside, scoped to outside w
