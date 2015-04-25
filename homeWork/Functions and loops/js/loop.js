@@ -58,20 +58,13 @@ alert("Returned function parameter: " + ageReturned);
 
 //anonymous function
 
-var functionName = function(){
-    //code to run
-}
 
 //call anonymous must be declared before called downside
 
 //dog years
 
-var calcArea = function(w, h){
-    //code function runs
-    var area = w * h;
-    return area;
-}
+var calcArea = function(w, h){area = w * h; return area}
 
-var a = calcArea(20, 30); //
+var a = calcArea(20, 30); //invoking should happen after defining the anonymous function
 
 console.log(a);
