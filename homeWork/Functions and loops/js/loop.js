@@ -6,4 +6,9 @@
  Section:       1
  Term:          I
  */
+//Functions -- normal
+//Proceedures
+//Anonymous functions
+//idea  password and requirements? and user id generator number.random
+//Functions
 
