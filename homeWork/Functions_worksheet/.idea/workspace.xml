@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ee5e5de-203e-483b-891d-6991f2f1d667" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Functions_worksheet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/funct.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Functions and loops/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Functions and loops/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3ee5e5de-203e-483b-891d-6991f2f1d667" name="Default" comment="" />
     <ignored path="Functions_worksheet.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +34,9 @@
       <file leaf-file-name="funct.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/funct.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86376405">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -247,11 +241,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/funct.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86376405">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
