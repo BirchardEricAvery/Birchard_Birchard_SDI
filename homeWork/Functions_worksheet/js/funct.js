@@ -8,62 +8,93 @@
     Term:           I
  */
 
-//Calculate the Area of a Rectangle
+//TODO: Calculate the Area of a Rectangle
 
-var answer = calcArea(5, 6);    //putting function calcArea into answer
+//putting function calcArea into answer
+var answer = calcArea(5, 6);
 
-function calcArea(w, h) {      //making function calcArea using w & h variables
+//making function calcArea using w & h variables
+function calcArea(w, h) {
     var area;
-    area = w * h;              //putting w & h into area
 
-    return area;                   //function returning, or spitting out information via variable area
+    //putting w & h into area
+    area = w * h;
+
+    //function returning, or spitting out information via variable area
+    return area;
 
 }
-console.log("The Area of the Rectangle is" + " " + answer);  //reporting answer via console log
+//reporting answer via console log
+console.log("The Area of the Rectangle is" + " " + answer);
 
-//Circumference of a circle C = 2 * pie * r, or 2 * 3.14 * x
+//TODO: Circumference of a circle C = 2 * pie * r, or 2 * 3.14 * x
 
 //parameters of function
 
-var r = prompt("What is the Radius of your circle?"); //Radius of your circle
-parseInt(r);                        //making variable r a number
 
-var t = 2;                          //two
-var p = 3.14;                       //pie
+var r = prompt("What is the Radius of your circle?");
+//making variable r a number
+parseInt(r);
 
-x = calcC(t, p, r);             //putting function calcC into x
+//two
+var t = 2;
 
-function calcC(t, p, r){            //making function calcC to calculation the area of a circle
+//pie
+var p = 3.14;
+
+//putting function calcC into x
+x = calcC(t, p, r);
+
+//making function calcC to calculation the area of a circle
+function calcC(t, p, r){
     var circ;
-    circ = t * p * r;           //putting variables, or calculations into circ variable
-    return circ;                    //returning, or spitting out circ variable
+
+    //putting variables, or calculations into circ variable
+    circ = t * p * r;
+
+    //returning, or spitting out circ variable
+    return circ;
 }
 
-console.log("The circumference of the Circle is" + " " + x);   //logging x or area of a circle to console
+//logging x or area of a circle to console
+console.log("The circumference of the Circle is" + " " + x);
 
-//It takes 8.666666667 bee stings per pound to kill an animal. Calculate how many bee stings are needed to kill an animal in a function
-//Begin bee sting function kill
-
+/*TODO: It takes 8.666666667 bee stings per pound to kill an animal. Calculate how many bee stings are needed to kill an animal in a function
+TODO:Begin bee sting function kill
+*/
 
 //Victim's weight (in pounds)
-var stingKill = 8.666666667;                                        //amount of bee stings to kill
-var weight = prompt("What is the victims weight?");                //user input of victims weight into variable weight
-parseInt(weight);                                                 //making weight variable a number
+
+//amount of bee stings to kill
+var stingKill = 8.666666667;
+
+//user input of victims weight into variable weight
+var weight = prompt("What is the victims weight?");
+
+//making weight variable a number
+parseInt(weight);
 
 //Return number of bee stings
+//putting function calcK into x
+var x = calcK(stingKill, weight);
 
 
-var x = calcK(stingKill, weight);               //putting function calcK into x
-
-function calcK(stingKill, weight){              //making function calcK to function variables
+//making function calcK to function variables
+function calcK(stingKill, weight){
     var kill;
-    kill = stingKill * weight;              //putting variables, or calculations into kill variable
-    return kill;                                //returning, or spitting out kill variable
+
+    //putting variables, or calculations into kill variable
+    kill = stingKill * weight;
+
+    //returning, or spitting out kill variable
+    return kill;
 }
 
 
 //Result to print to the console
+//weight of animal
+//number of required stings to kill
 
-console.log("Number of stings required to kill an animal weighing" + " " + weight + " " +   //weight of animal
-    "is" + " " + x);                                                                           //number of required stings to kill
+console.log("Number of stings required to kill an animal weighing" + " " + weight + " " +
+    "is" + " " + x);
 
