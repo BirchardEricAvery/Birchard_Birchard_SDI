@@ -24,7 +24,7 @@ while(b > 0){
 }
 
 
-*/
+
 
 //TODO: Do While Loop
 var c = 10;
@@ -34,5 +34,14 @@ do{
     c--;
 }while(c > 0);
 
+
+
+*/
+
 //TODO: For Loop
+//short hand combination
+
+for(var i = 10; i > 0; i--){
+    console.log(i + " i countdown")
+}
 
