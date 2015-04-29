@@ -53,7 +53,7 @@ bad = 449;
 
 //TODO Bank loan information: Name, address, phone
 
-//TODO begin aplicant validations, castings.............................................................................
+//TODO begin applicant validations, castings.............................................................................
 
 //account holders name and validation for empty problem
 
