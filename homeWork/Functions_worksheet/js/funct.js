@@ -11,7 +11,15 @@
 //TODO: Calculate the Area of a Rectangle
 
 //putting function calcArea into answer
-var answer = calcArea(5, 6);
+
+//parameters of function
+
+var w = prompt("Enter width of rectangle:");
+Number(w);
+var h = prompt("Enter hight of rectangle:");
+Number(h);
+
+answer = calcArea(w, h);
 
 //making function calcArea using w & h variables
 function calcArea(w, h) {
@@ -30,7 +38,6 @@ console.log("The Area of the Rectangle is" + " " + answer);
 //TODO: Circumference of a circle C = 2 * pie * r, or 2 * 3.14 * x
 
 //parameters of function
-
 
 var r = prompt("What is the Radius of your circle?");
 //making variable r a number
