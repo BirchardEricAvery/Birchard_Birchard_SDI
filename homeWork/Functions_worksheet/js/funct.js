@@ -13,12 +13,18 @@
 //putting function calcArea into answer
 
 //parameters of function
-
+//prompt for width
 var w = prompt("Enter width of rectangle:");
+
+//casting w to a number
 Number(w);
+
+//prompt for hights
 var h = prompt("Enter hight of rectangle:");
+//casing h to a number
 Number(h);
 
+//putting function variables in to answer
 answer = calcArea(w, h);
 
 //making function calcArea using w & h variables
@@ -54,13 +60,13 @@ x = calcC(t, p, r);
 
 //making function calcC to calculation the area of a circle
 function calcC(t, p, r){
-    var circ;
+    var c;
 
     //putting variables, or calculations into circ variable
-    circ = t * p * r;
+    c = t * p * r;
 
     //returning, or spitting out circ variable
-    return circ;
+    return c;
 }
 
 //logging x or area of a circle to console
@@ -81,7 +87,7 @@ var weight = prompt("What is the victims weight?");
 //making weight variable a number
 parseInt(weight);
 
-//Return number of bee stings
+
 //putting function calcK into x
 var x = calcK(stingKill, weight);
 
