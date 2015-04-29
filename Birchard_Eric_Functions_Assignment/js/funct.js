@@ -27,7 +27,7 @@ Number(h);
 //putting function variables in to answer
 answer = calcArea(w, h);
 
-//making function calcArea using w & h variables
+//making function for trailer number
 function calcArea(w, h) {
     var area;
 
