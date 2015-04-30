@@ -122,17 +122,17 @@ console.log("Trailer number created" + " " + trailerNumber);
 
  while(identifierLocation === ""){
 
- if(identifierLocation === "") {
+    if(identifierLocation === "") {
      identifierLocation = prompt("Entry was blank, please enter a trailer location identifier:");
- }else if(String(identifierLocation)){
- alert("Your trailer location identifier is: " + identifierLocation)
+        }else if(String(identifierLocation)){
+            alert("Your trailer location identifier is: " + identifierLocation)
  }
 
 
  }
 
- //making trailer location number lower case
-locationNumber = identifierLocation.toLowerCase();
+ //making trailer location identifyer lower case
+identifierLocation = identifierLocation.toLowerCase();
 
 
 
@@ -168,7 +168,8 @@ var refer;
 refer = "refer";
 
 
-var trailerType = prompt("Enter trailer type:");
+var trailerType = prompt("Enter trailer type \n" +
+    "(van, refer, flatbed:");
 //validation
 //while loop for for blank entry for trailer type
 
@@ -187,7 +188,7 @@ while(trailerType === ""){
 trailerType = trailerType.toLowerCase();
 
 //console log trailer
-console.log("Trailer type:");
+console.log("Trailer type: " + trailerType);
 
 
 
@@ -220,17 +221,26 @@ console.log("Trailer number created" + " " + locationAnswer);
 
 //anonymous function has to come after function
 //combine trailer number and location
+//defining function and it's parameters
 
-/*
-var addNums = function(num1, num2){
-    var total = Number(num1)+Number(num2);
-    return total;
-};
-//call
-var totalReturned = addNums(5, 6);
-console.log(totalReturned + " returned");
-*/
-//array display trailer, location, combined
+
+var clt = function(locationAnswer, trailerNumber){
+
+    var combined = locationAnswer + trailerNumber;
+        return combined;
+}
+
+//invoking
+var locTrailer = clt(locationAnswer, trailerNumber);
+
+//console logging location of trailer
+console.log("Your trailer location for your trailer is: " + locTrailer);
+
+//notifying user of trailer number and location
+alert("Location of your trailer is: " + locTrailer);
+
+
+
 
 //write end test values
 //5 commits, verify in get hub, send link to instructor
