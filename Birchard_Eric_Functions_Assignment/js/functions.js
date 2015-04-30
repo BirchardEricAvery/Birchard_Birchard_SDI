@@ -176,7 +176,8 @@ var trailerType = prompt("Enter trailer type \n" +
 while(trailerType === ""){
 
     if(trailerType === "") {
-        trailerType = prompt("Entry was blank, please enter a trailer identifier:");
+        trailerType = prompt("Entry was blank, please enter a trailer identifier \n " +
+            "(van, refer, flatbed):");
     }else if(trailerType = van){
         alert("Trailer type: " + trailerType)
     }
@@ -192,7 +193,8 @@ console.log("Trailer type: " + trailerType);
 
 
 
-var locationAnswer = locationFunction(identifierLocation, numberLocation, trailerType);
+var locationAnswer = locationFunction(identifierLocation +
+    " ", numberLocation + " ", trailerType);
 
 
 
@@ -226,12 +228,13 @@ console.log("Trailer number created" + " " + locationAnswer);
 
 var clt = function(locationAnswer, trailerNumber){
 
-    var combined = locationAnswer + trailerNumber;
+    var combined = locationAnswer + " " +  trailerNumber;
+
         return combined;
-}
+};
 
 //invoking
-var locTrailer = clt(locationAnswer, trailerNumber);
+var locTrailer = clt(locationAnswer, " Trailer Number: " + trailerNumber);
 
 //console logging location of trailer
 console.log("Your trailer location for your trailer is: " + locTrailer);
@@ -242,8 +245,28 @@ alert("Location of your trailer is: " + locTrailer);
 
 
 
-//write end test values
-//5 commits, verify in get hub, send link to instructor
+//End test values
+/*
+Trailer identifier left blank and got entry was blank, please enter a trailer identifier.
+Entered N.
+Prompted for trailer number, entered CAT got Plse use only numbers:
+Entered 1000.
+For trailer identifier left blank, got entry was blank, please enter an end identifier.
+Entered  capital P.
+Received Your trailer number is: n1000p.
+
+Prompted for trailer location identifier, left blank.  Entry was blank received.
+Entered North Side.
+Prompted for Enter trailer identification number, entered DOG.
+Got please enter only numbers.  Then left blank, got entery was left blank.
+Entered 565.
+Prompted for trailer type, van, refer, flatbed. left blank.  Received entry was left blank
+please enter....
+Entered van
+Received, Your trailer location is: north side 565 van  Trailer Number: n1000p
+All console logs followed in suit
+ */
+//verify in get hub, send link to instructor
 
 
 //zip Birchard_Eric_Functions_Assignment to FSO and GitHub
