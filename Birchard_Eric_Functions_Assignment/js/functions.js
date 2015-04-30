@@ -79,11 +79,11 @@ while(e === ""){
 e = e.toLowerCase();
 
 
-//putting function variables in to answer
+//putting function variables in trailer moving them to trailerNumber
 var trailerNumber = trailer(i, n, e);
 
 
-//TODO: Trailer number maker function******************************************************************************
+//TODO: Trailer number maker function#1 *********************************************************************
 //making function trailer using i, n, e variables aka 3 arguments
 function trailer(i, n, e) {
     var ine;
@@ -104,65 +104,119 @@ console.log("Trailer number created" + " " + trailerNumber);
 
 
 
-/*
-//TODO: Trailer location function**********************************************************************************
+
+
+
+
+//TODO: Trailer location function#2  ************************************************************************
 //prompt for location maker
+
+ //Begin trailer location maker prompts
+ //validation loop
+ //3 parameters
  //lowercase
-var i2 = prompt("Enter location number identifier (letter/s), if none leave blank:");
-
-//Trailer number
-n2 = prompt("Enter trailer number:");
-
-//casting n to a number and validating
-Number(n2);
-
-if(n2 === "") {
-    prompt("Entry was left blank, " +
-        "please enter a location number:")
-}else if(isNaN(n2)) {
-    n = prompt("Please enter numbers only for location number:")
-}else{alert("Location number: " + n)}
-
-//while loop for for blank entry for trailer number
-while(n2 === ""){
-    prompt("Entry was left blank, " +
-        "please enter a location number:")
-}
-
-//while loop for trailer number if not a number
-while(isNaN(n2)){prompt("Please enter numbers only for trailer number:")
-}
+ var identifierLocation = prompt("Enter trailer location identifier:");
 
 
-//casting n to a number and validating
-Number(n2);
+ //while loop for for blank entry for trailer number identifier
+
+ while(identifierLocation === ""){
+
+ if(identifierLocation === "") {
+     identifierLocation = prompt("Entry was blank, please enter a trailer location identifier:");
+ }else if(String(identifierLocation)){
+ alert("Your trailer location identifier is: " + identifierLocation)
+ }
 
 
-var e2 = prompt("Enter end trailer identifier if any (letter/s, if none leave blank:");
+ }
+
+ //making trailer location number lower case
+locationNumber = identifierLocation.toLowerCase();
 
 
-//putting function variables in to reference2
-locationNumber = trailer(i2, n2, e2, reference);
-var reference2 = 0; reference2++;
 
-//making function trailer using i, n, e variables aka 3 arguments
-function trailer(i2, n2, e2, reference) {
-    var ine2;
+ //Trailer location number
+ var numberLocation = prompt("Enter trailer identification number:");
 
-    //putting w & h into area
-    ine = i2 + n2 + e2 + reference;
 
-    //function returning, or spitting out information via variable area
-    return ine2;
+//while loop for for blank entry for trailer location number
+
+while(numberLocation === "" || isNaN(numberLocation)){
+
+    if(numberLocation === "") {
+        numberLocation = prompt("Entry was blank, please enter numbers only for trailer location number:");
+    }else if(isNaN(numberLocation)){
+        numberLocation = prompt("Please use only use numbers:")
+    }
+
 
 }
 
-*/
+//casting numberLocation  to a number
+numberLocation = Number(numberLocation);
+
+
+//making trailer type
+//variables
+//trailer types
+var van;
+van = "van";
+var flatbed;
+flatbed = "flatbed";
+var refer;
+refer = "refer";
+
+
+var trailerType = prompt("Enter trailer type:");
+//validation
+//while loop for for blank entry for trailer type
+
+while(trailerType === ""){
+
+    if(trailerType === "") {
+        trailerType = prompt("Entry was blank, please enter a trailer identifier:");
+    }else if(trailerType = van){
+        alert("Trailer type: " + trailerType)
+    }
+
+
+}
+
+//making trailer type lower case
+trailerType = trailerType.toLowerCase();
+
+//console log trailer
+console.log("Trailer type:");
+
+
+
+var locationAnswer = locationFunction(identifierLocation, numberLocation, trailerType);
+
+
+
+//making function for trailer identifier, number location, and type
+function locationFunction(identifierLocation, numberLocation, trailerType) {
+    var identifyLocationType;
+
+    //putting identifier location and type into identifyLocationType
+    identifyLocationType = identifierLocation + numberLocation + trailerType;
+
+    //function returning, or spitting out information via variable identifyLocationType
+    return identifyLocationType;
+
+}
+
+//reporting answer via console log
+alert("Your trailer location is: " + locationAnswer);
+
+//console logging trailer number created
+console.log("Trailer number created" + " " + locationAnswer);
 
 
 
 
-
+//TODO: anonymous function
 
 //anonymous function has to come after function
 //combine trailer number and location
