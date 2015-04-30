@@ -266,7 +266,7 @@ Entered van
 Received, Your trailer location is: north side 565 van  Trailer Number: n1000p
 All console logs followed in suit
  */
-//verify in get hub, send link to instructor
+//send link to instructor
 
 
 //zip Birchard_Eric_Functions_Assignment to FSO and GitHub
