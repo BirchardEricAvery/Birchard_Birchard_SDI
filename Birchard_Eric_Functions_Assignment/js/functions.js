@@ -26,14 +26,14 @@ var i = prompt("Enter trailer number identifier:");
 
 while(i === ""){
 
-    if(i === "") {
+    if(i === ""){
         i = prompt("Entry was blank, please enter a trailer identifier:");
-    }else if(String(i)){
+    }else if (String(i)){
         alert("Your trailer identifier is: " + i)
     }
 
-
 }
+
 
 //making trailer identifier lower case
 i = i.toLowerCase();
@@ -56,7 +56,7 @@ while(n === "" || isNaN(n)){
 }
 
 //casting string n to a number
-n = parseInt(n);
+n = Number(n);
 
 
 
@@ -66,13 +66,11 @@ var e = prompt("Enter end trailer identifier:");
 
 while(e === ""){
 
-    if(e === "") {
+    if(e === ""){
         e = prompt("Entry was blank, please enter an end trailer identifier:");
     }else if(String(e)){
         alert("Your trailer identifier is: " + i)
     }
-
-
 }
 
 //making trailer end identifier lower case
@@ -85,7 +83,7 @@ var trailerNumber = trailer(i, n, e);
 
 //TODO: Trailer number maker function#1 *********************************************************************
 //making function trailer using i, n, e variables aka 3 arguments
-function trailer(i, n, e) {
+function trailer(i, n, e){
     var ine;
 
     //putting i n e into trailer
@@ -162,27 +160,27 @@ numberLocation = Number(numberLocation);
 //trailer types
 var van;
 van = "van";
+
 var flatbed;
 flatbed = "flatbed";
+
 var refer;
 refer = "refer";
 
-
+//prompt for trailer type
 var trailerType = prompt("Enter trailer type \n" +
     "(van, refer, flatbed:");
+
 //validation
 //while loop for for blank entry for trailer type
-
 while(trailerType === ""){
 
-    if(trailerType === "") {
+    if(trailerType === ""){
         trailerType = prompt("Entry was blank, please enter a trailer identifier \n " +
             "(van, refer, flatbed):");
     }else if(trailerType = van){
         alert("Trailer type: " + trailerType)
     }
-
-
 }
 
 //making trailer type lower case
@@ -192,18 +190,17 @@ trailerType = trailerType.toLowerCase();
 console.log("Trailer type: " + trailerType);
 
 
-
+//sending function answer into locationAnswer
 var locationAnswer = locationFunction(identifierLocation +
     " ", numberLocation + " ", trailerType);
-
 
 
 //making function for trailer identifier, number location, and type
 function locationFunction(identifierLocation, numberLocation, trailerType) {
     var identifyLocationType;
 
-    //putting identifier location and type into identifyLocationType
-    identifyLocationType = identifierLocation + numberLocation + trailerType;
+        //putting identifier location and type into identifyLocationType
+        identifyLocationType = identifierLocation + numberLocation + trailerType;
 
     //function returning, or spitting out information via variable identifyLocationType
     return identifyLocationType;
@@ -218,14 +215,13 @@ console.log("Trailer number created" + " " + locationAnswer);
 
 
 
-
 //TODO: anonymous function
 
 //anonymous function has to come after function
 //combine trailer number and location
 //defining function and it's parameters
 
-
+//TODO: not sure how to fix combined as redundant...?
 var clt = function(locationAnswer, trailerNumber){
 
     var combined = locationAnswer + " " +  trailerNumber;
@@ -265,11 +261,12 @@ please enter....
 Entered van
 Received, Your trailer location is: north side 565 van  Trailer Number: n1000p
 All console logs followed in suit
+
+lines 227 and 229 have combined as redundant and I have no idea how to fix that...
  */
-//send link to instructor
 
 
-//zip Birchard_Eric_Functions_Assignment to FSO and GitHub
+
 
 
 
