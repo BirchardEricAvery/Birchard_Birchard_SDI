@@ -24,15 +24,8 @@ var i = prompt("Enter trailer number identifier:");
 //validation
 //while loop for for blank entry for trailer number
 
-while(i === ""){
-
-    if(i === ""){
-        i = prompt("Entry was blank, please enter a trailer identifier:");
-    }else if (String(i)){
-        alert("Your trailer identifier is: " + i)
+while(i === ""){i = prompt("Entry was blank, please enter a trailer identifier:");
     }
-
-}
 
 
 //making trailer identifier lower case
