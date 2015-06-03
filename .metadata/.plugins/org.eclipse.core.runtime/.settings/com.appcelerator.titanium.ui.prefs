@@ -1,0 +1,14 @@
+=run
+BirchardProject1\:launchMode=run
+BirchardProject1\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
+Birchard_First_app\:launchMode=run
+Birchard_First_app\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.834CF982-4813-4551-B620-AAF2958924E3
+Birchard_Project1\:launchMode=run
+Birchard_Project1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.264A7424-0C01-4453-A4B8-77B79FDD518A
+Birchard_pr\:launchMode=run
+Birchard_pr\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.264A7424-0C01-4453-A4B8-77B79FDD518A
+LAST_LAUNCH_TIMESTAMP=1433355257213
+eclipse.preferences.version=1
+preference.show.console.onError=true
+preference.studio.perspective.toolbar.visible=false
+preference.studio.perspective.version=103
