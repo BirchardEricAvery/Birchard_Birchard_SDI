@@ -1,80 +1,45 @@
-/**
- * Created by avery on 9/14/15.
- */
+//TODO User choice
 
-//Add function
+var userChoice = prompt("Do you choose rock, paper, or scissors?");
 
-var a = prompt("Enter first value:");
-a = Number(a);
+console.log("You chose: " + userChoice);
+alert("You chose: " + userChoice);
 
-while(a === ""){
 
-    if(a === ""){
-        a = prompt("Entry was blank, please enter a number:");
-    }else if(String(e)){
-        alert("Your frist value is: " + a)
-    }
+//TODO computer choice
+
+var computerChoice = Math.random();
+console.log("comuterChoice number: " + computerChoice);
+if(computerChoice <= 0.33){
+    computerChoice = "rock";
+
+}else if (computerChoice <= 0.66) {
+    computerChoice = "paper";
+
+}else{
+    computerChoice = "scissors";
 }
 
-var b = prompt("Enter second value:");
-b = Number(b);
+console.log("The computer chose: " + computerChoice);
+alert("The computer chose: " + computerChoice);
 
-while(a === ""){
+//TODO compare
 
-    if(a === ""){
-        a = prompt("Entry was blank, please enter a number:");
-    }else if(String(e)){
-        alert("Your first value is: " + b)
-    }
-}
+var compare = function(choice1, choice2) {
+    if (choice1 === choice2) {
+        return "The result is a tie!";
 
-var answer = add(a, b);
+    }else if(choice1 === "rock" && choice2 === "scissors")
+        {return "Rock wins";
 
-function add(a, b){
-    var ab;
-    ab = a + b;
+    }else if(choice1 === "paper" && choice2 === "rock")
+        {return "Paper wins";
 
-    return ab;
-}
+    }else(choice1 === "scissors" && choice2 === "rock") {
+        {return "Scissors wins";
+    }};
 
-alert("Numbers added to together equal:" + " " + answer);
-//*************************************************************
-
-//Multiply function
-
-
-var answerM = multiply(a, b);
-
-function multiply(a, b){
-    var m;
-    m = a * b;
-
-    return m;
-}
-
-
-//*****************************************************************
-
-Array.matrix = function (m, n, initial) {
-    var a, i, j, mat = [];
-    for (i = 0; i < m; i += 1) {
-        a = [];
-        for (j = 0; j < n; j += 1) {
-            a[j] = initial;
-        }
-        mat[i] = a;
-    }
-    return mat;
-};
-
-Array.identity = function (n){
-    var i, mat = Array.matrix(n, n, 0);
-    for(i = 0; i < n; i += 1){
-        mat[i][i] = 1;
-    }
-    return mat;
-};
-
-myMatrix = Array.identity(4);
-
-alert('Multi dimensional array: ' + myMatrix);
+    console.log(compare(choice1, choice2));
+    alert(compare(choice1, choice2));
+    console.log("The computer chose: " + computerChoice());
+    alert("The computer chose: " + computerChoice());
